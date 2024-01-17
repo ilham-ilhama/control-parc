@@ -1,3 +1,15 @@
+@font-face{
+    font-family: ecreture;
+    src: url(Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: salsa;
+    src: url(Salsa-Regular.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+}
 header{
     background-image: linear-gradient(to right, #e93bdd, #e944dc, #e94cdb, #e954da, #e95bd9, #d970e9, #c881f5, #b790fe, #91a8ff, #7abbff, #7dc9f8, #95d3ea);
     height:230px;
@@ -23,13 +35,17 @@ header{
     margin-top:28px;
     margin-right: 20px;
     gap:15px;
-
+    height:40px;
 }
 .liens{
     display:flex;
     flex-direction:row;
     justify-content: space-around;
+    position: relative;
+    bottom: 15px;
+    right: 15px;
 }
+
 .options{
     display: none;
     list-style-type: none;
@@ -39,6 +55,28 @@ header{
 .item:hover .options{
     display: block;
 }
-@media (max-width:900px){
+.logo a{
+    border-radius: 50%;
+   
+}
+.logo a:nth-of-type(1):focus{
+    box-shadow: 1px 1px 5px 7px rgb(24, 119, 242);
+}
+.logo a:nth-of-type(2):focus{
+    box-shadow: 1px 1px 5px 7px rgb(251, 50, 130);
+}
+.logo a:nth-of-type(3):focus{
+    box-shadow: 1px 1px 5px 7px rgb(12, 12, 12);
+}
+.logo a:nth-of-type(4):focus{
+    box-shadow: 1px 1px 5px 7px rgb(255, 0, 0);
+}
+.liens a {
+    text-decoration:none;
+    font-size:18px;
+    font-weight: 800;
+    font-family:salsa;
+    color: rgb(253,233,93);
+    text-shadow: 2px 2px 2px black;
     
 }
