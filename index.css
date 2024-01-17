@@ -1,0 +1,44 @@
+header{
+    background-image: linear-gradient(to right, #e93bdd, #e944dc, #e94cdb, #e954da, #e95bd9, #d970e9, #c881f5, #b790fe, #91a8ff, #7abbff, #7dc9f8, #95d3ea);
+    height:230px;
+    display: flex;
+    flex-direction:column;
+    
+}
+.les_logos{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    height: 80%;
+}
+.yassmine {
+    height:90%;
+    margin-left: 20px;
+}
+.logo img{
+    height:40px;
+}
+.logo{
+    display: flex;
+    margin-top:28px;
+    margin-right: 20px;
+    gap:15px;
+
+}
+.liens{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.options{
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.item:hover .options{
+    display: block;
+}
+@media (max-width:900px){
+    
+}
