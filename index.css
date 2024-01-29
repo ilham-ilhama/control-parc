@@ -261,26 +261,30 @@ div .border_3 {
   padding: 5px;
   border-radius: 5px;
 }
-.main_aside{
-  display:flex;
-  flex-direction:row;
+.main_aside {
+  display: flex;
+  flex-direction: row;
 }
-main{
+main {
+  background-color: rgba(253, 108, 212, 0.571);
   height: 500px;
   width: 50%;
   font-family: salsa;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-main h1{
-  background: linear-gradient(to right,rgb(244, 47, 132) 0%, #0af3f7 100% );
+main h1 {
+  background: linear-gradient(to right, rgb(244, 47, 132) 0%, #0af3f7 100%);
   background-clip: text;
-  color:transparent;
+  color: transparent;
   font-size: 50px;
 }
-main p{
+main h1:hover {
+  border-bottom: white 3px solid;
+  border-radius: 3px;
+}
+main p {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -290,18 +294,17 @@ main p{
   height: 190px;
   border-radius: 50%;
   background-color: white;
-  box-shadow: 0 0 17px -10px green ;
+  box-shadow: inset 0 0 40px -0px rgb(253, 108, 212);
 }
-main .paragraph{
-  box-shadow: inset 0 0 17px 6px white, inset 0 0 3px 2px white; 
-  background:linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+main .paragraph {
+  box-shadow: inset 0 0 17px 6px white, inset 0 0 3px 2px white;
+  background: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
   border-radius: 50%;
   padding: 5px;
 }
 
-aside{
+aside {
   height: 500px;
-  width:50%;
-  background-color: black;
-
+  width: 50%;
+  background-color: ;
 }
