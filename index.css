@@ -22,19 +22,46 @@ body {
   padding: 0;
 }
 header {
-  background-image: url(les_images/img2header.jpg);
-  backdrop-filter:blur(5px);
+  position: relative;
   height: 180px;
   display: flex;
   flex-direction: row;
+  color:whitesmoke;
   justify-content: space-between;
+  overflow: hidden;
+}
+header::before{
+  content: "";
+  background-image: url(les_images/img2header.jpg);
+  background-size: cover;
+  filter: blur(2px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 nav {
-  background-color: white;
+  background-color: rgba(202, 72, 196);
+  backdrop-filter: blur(5px);
   position: sticky;
   z-index: 3;
   top: 5px;
-  border: solid;
+  border: solid white;  
+}
+.liens a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: salsa;
+  color:rgba(255, 255, 255, 0.756) ;
+  text-shadow: 3px 3px 3px black;
+  padding-bottom: 2px;
+}
+.liens a:hover {
+  color: rgb(223, 110, 240);
+  border-bottom: 2px solid white;
 }
 .yassmine {
   height: 100%;
@@ -84,19 +111,7 @@ nav {
 .logo a:nth-of-type(4):focus {
   box-shadow: 1px 1px 5px 7px rgb(255, 0, 0);
 }
-.liens a {
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 800;
-  font-family: salsa;
-  color: rgb(253, 233, 93);
-  text-shadow: 3px 3px 3px black;
-  padding-bottom: 2px;
-}
-.liens a:hover {
-  color: rgb(124, 205, 216);
-  border-bottom: 2px solid black;
-}
+
 footer {
   width: 100%;
   font-family: arial;
