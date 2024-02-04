@@ -285,7 +285,7 @@ div .border_3 {
 }
 main {
   background-color: rgba(253, 108, 212, 0.571);
-  height: 500px;
+  height: 1000px;
   width: 50%;
   font-family: salsa;
   display: flex;
@@ -322,11 +322,11 @@ main .paragraph {
 }
 
 aside {
-  height: 500px;
+  height: 1000px;
   width: 50%;
   
 }
 aside div img{
-  width: 100px;
-  height: 80px;
+  width: 200px;
+  height: 150px;
 }
