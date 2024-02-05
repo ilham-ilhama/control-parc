@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-
       body {
         width: 100%;
         height: 100vh;
-        background-image: url(les_images/reservation_aniv/1118179.jpg);
         padding: 0;
         margin: 0;
-        background-repeat: no-repeat;
-        background-position: bottom;
         display: flex;
         justify-content: end;
         align-items: center;
@@ -22,7 +18,7 @@
         width: 400px;
         height: 400px;
         background-color: rgba(0, 0, 0, 0.447);
-        margin-right: 100px;
+        margin-right: 280px;
         border-radius: 10px;
         clip-path: blur(50px);
         display: flex;
@@ -53,15 +49,35 @@
         height: 30px;
         border-radius: 5px;
       }
-     
+      body .gateaux{
+        position: fixed;
+        left:50px;
+        width: 60%;
+        bottom: 0;
+      }
+      body .ballons1{
+        position: fixed;
+        top:0;
+        left:0;
+        width:15%;
+      }
+      body .ballons2{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 10%;
+      }
     </style>
   </head>
   <body>
+    <img class="gateaux" src="les_images/reservation_aniv/1118179.png" />
+    <img class="ballons1" src="les_images/reservation_aniv/ballons.png">
     <div class="cart">
       <input type="email" placeholder="E-mail" />
       <input type="password" placeholder="Mot de Passe" />
       <button>Entrer</button>
       <a href="#">Creer Compte</a>
     </div>
+    <img class="ballons2" src="les_images/reservation_aniv/ballons.png">
   </body>
 </html>
