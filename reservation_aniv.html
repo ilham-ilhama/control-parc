@@ -30,10 +30,12 @@
       body .cart {
         width: 400px;
         height: 400px;
-        background-color: rgba(0, 0, 0, 0.447);
+        background-color: rgba(247, 245, 241, 0.413);
+        clip-path: blur(50px);
+        backdrop-filter: blur(8px);
         margin-right: 280px;
         border-radius: 10px;
-        clip-path: blur(50px);
+        border: solid 2px rgb(152, 152, 151);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -41,9 +43,12 @@
         border-radius: 41% 59% 0% 100% / 40% 60% 40% 60%;
         transition-property: border-radius;
         transition-duration: 3s;
+        box-shadow: 1px 1px 50px 20px rgb(128, 128, 128);
       }
       body .cart:hover {
         border-radius: 50%;
+        box-shadow: 1px 1px 50px 30px rgb(247, 246, 246);
+        border: solid 2px white;
       }
       body .cart input {
         width: 250px;
@@ -55,7 +60,7 @@
         outline: none;
       }
       body .cart input::placeholder {
-        color: white;
+        color: rgb(90, 87, 87);
       }
       body .cart button {
         width: 50%;
@@ -85,39 +90,38 @@
         position: fixed;
         width: 30%;
         top: 0;
-        left:200px;
+        left: 200px;
       }
-      body .gateaux{
+      body .gateaux {
         position: fixed;
         width: 15%;
         left: 150px;
         bottom: -5px;
       }
-      body .deco1{
+      body .deco1 {
         position: fixed;
         width: 20%;
         left: 0;
-        bottom:-5px;
+        bottom: -5px;
       }
-      body .deco2{
+      body .deco2 {
         position: fixed;
         width: 20%;
-        left:300px;
-        bottom:-5px;
+        left: 300px;
+        bottom: -5px;
       }
-    
     </style>
   </head>
   <body>
     <img class="ballons1" src="les_images/reservation_aniv/ballon_top.png" />
     <img class="truc1" src="les_images/reservation_aniv/truc1.png" />
-    <img class="deco1" src="les_images/reservation_aniv/truc2.png">
-    <img class="deco2" src="les_images/reservation_aniv/truc3.png">
-    <img class="gateaux" src="les_images/reservation_aniv/gateaux.png">
+    <img class="deco1" src="les_images/reservation_aniv/truc2.png" />
+    <img class="deco2" src="les_images/reservation_aniv/truc3.png" />
+    <img class="gateaux" src="les_images/reservation_aniv/gateaux.png" />
     <div class="cart">
       <input type="email" placeholder="E-mail" />
       <input type="password" placeholder="Mot de Passe" />
-      <button>Entrer</button>
+      <button><a href="#">Entrer</a></button>
       <a href="#">Creer Compte</a>
     </div>
     <img class="ballons2" src="les_images/reservation_aniv/ballon_bottom.png" />
