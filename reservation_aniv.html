@@ -6,7 +6,19 @@
     <title>Document</title>
     <style>
       body {
-        background-color: #20e4f5dc;
+        background: rgb(241, 237, 226);
+        background: radial-gradient(
+          circle,
+          rgba(241, 237, 226, 1) 8%,
+          rgba(242, 187, 20, 1) 26%,
+          rgba(244, 238, 238, 1) 48%,
+          rgba(219, 166, 42, 1) 58%,
+          rgba(242, 237, 237, 1) 68%,
+          rgba(224, 161, 25, 1) 87%,
+          rgba(232, 194, 118, 1) 91%,
+          rgba(232, 194, 118, 1) 97%
+        );
+
         width: 100%;
         height: 100vh;
         padding: 0;
@@ -50,42 +62,65 @@
         height: 30px;
         border-radius: 5px;
       }
-      body .gateaux {
-        position: fixed;
-        width: 50%;
-        left: 0;
-        bottom: -2%;
 
-      }
-      body .cadeaux{
-        position: fixed;
-        width: 15px;
-        bottom: 0;
-        left: 0;
-      }
       body .ballons1 {
         position: fixed;
         top: 0;
-        width: 15%;
+        left: 0;
+        width: 18%;
       }
       body .ballons2 {
         position: fixed;
         right: 0;
-        bottom: 0;
-        width: 10%;
+        bottom: 5px;
+        width: 15%;
       }
+      body .truc1 {
+        position: fixed;
+        width: 30%;
+        top: 0;
+        right: 0;
+      }
+      body .truc2 {
+        position: fixed;
+        width: 30%;
+        top: 0;
+        left:200px;
+      }
+      body .gateaux{
+        position: fixed;
+        width: 15%;
+        left: 150px;
+        bottom: -5px;
+      }
+      body .deco1{
+        position: fixed;
+        width: 20%;
+        left: 0;
+        bottom:-5px;
+      }
+      body .deco2{
+        position: fixed;
+        width: 20%;
+        left:300px;
+        bottom:-5px;
+      }
+    
     </style>
   </head>
   <body>
-    <img class="ballons1" src="les_images/reservation_aniv/ballons.png">
-    <img class="cadeaux" src="les_images/reservation_aniv/cadeaux.png">
-    <img class="gateaux" src="les_images/reservation_aniv/gateaux.png" />
+    <img class="ballons1" src="les_images/reservation_aniv/ballon_top.png" />
+    <img class="truc1" src="les_images/reservation_aniv/truc1.png" />
+    <img class="deco1" src="les_images/reservation_aniv/truc2.png">
+    <img class="deco2" src="les_images/reservation_aniv/truc3.png">
+    <img class="gateaux" src="les_images/reservation_aniv/gateaux.png">
     <div class="cart">
       <input type="email" placeholder="E-mail" />
       <input type="password" placeholder="Mot de Passe" />
       <button>Entrer</button>
       <a href="#">Creer Compte</a>
     </div>
-    <img class="ballons2" src="les_images/reservation_aniv/ballons.png" />
+    <img class="ballons2" src="les_images/reservation_aniv/ballon_bottom.png" />
+    <img class="truc2" src="les_images/reservation_aniv/truc1.png" />
   </body>
 </html>
