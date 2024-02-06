@@ -5,7 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      body {
+@keyframes rien {
+  0% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}   body {
         background: rgb(241, 237, 226);
         background: radial-gradient(
           circle,
@@ -61,13 +71,42 @@
       }
       body .cart input::placeholder {
         color: rgb(90, 87, 87);
+        font-family: salsa;
       }
+    
       body .cart button {
         width: 50%;
         height: 30px;
-        border-radius: 5px;
+        border-radius: 60px;
+        border: solid 2px rgba(129, 127, 127, 0.765);
+        font-family: salsa;
+        background-image: radial-gradient(
+          circle 957px at 8.7% 50.5%,
+          rgba(245, 195, 13, 0.831) 0%,
+          rgba(249, 47, 47, 0.642) 90%
+        );
+    
       }
-
+      body .cart button:hover{
+        box-shadow: 10px 10px 5px 2px rgba(129, 127, 127, 0.765);
+        border :solid 3px rgba(129, 127, 127, 0.765);
+      }
+      body .cart button a {
+        text-decoration: none;
+        color:rgb(121, 119, 119);
+      }
+      body .cart button a:hover{
+        color: azure;
+      }
+      body .cree {
+        font-family: salsa;
+        padding-top: 25px;
+        padding-left: 80px;
+        color: rgb(120, 118, 118);
+      }
+      body .cree:hover{
+        color: azure;
+      }
       body .ballons1 {
         position: fixed;
         top: 0;
@@ -121,8 +160,8 @@
     <div class="cart">
       <input type="email" placeholder="E-mail" />
       <input type="password" placeholder="Mot de Passe" />
-      <button><a href="#">Entrer</a></button>
-      <a href="#">Creer Compte</a>
+      <button><a href="reserver.html">Entrer</a></button>
+      <a class="cree" href="#">Créer Compte</a>
     </div>
     <img class="ballons2" src="les_images/reservation_aniv/ballon_bottom.png" />
     <img class="truc2" src="les_images/reservation_aniv/truc1.png" />
