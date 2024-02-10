@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Créer Compte</title>
+    <style>
+        body input{
+            border-radius: 50% 80% / 70% 10%;
+            
+        }
+        body img{
+            width: 50%;
+        }
+        body .img{
+            height: 180px;
+            width:17%;
+        }
+        body .img_formulaire{
+            display: flex;
+            flex-direction: column;  
+        }
+        body .les_images{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
 </head>
 <body>
     <h1>Bienvenue</h1>
     <h2>formulair pour s'inscrire</h2>
+
+    <div class="les_images">
+    <img src="les_images/reservation_aniv/zyro-image (4).png">
+    <img class="img" src="les_images/reservation_aniv/zyro-image (6).png">
+    </div>
+    
+    <div>
     <form>
         <label for="nom">Nom :</label>
         <input type="text" id="nom" name="nom">
@@ -20,10 +48,10 @@
         <label for="date">date naissance :</label>
         <input type="date" id="prenom" name="prenom">
     </form>
-    <input type="checkbox" id="homme" name="homme">
+    <input type="radio" id="homme" name="choi">
     <label for="homme">Homme</label>
-    <input type="checkbox" id="femme" name="femme">
-    <label for="femme">Femme</label> 
+    <input type="radio" id="femme" name="choi">
+    <label for="femme">Femme</label> <br>
     <select>
         <option>ville</option>
         <option>casa blanca</option>
@@ -44,7 +72,6 @@
     <form>
         <input type="submit" id="envoyer" name="envoyer">
     </form>
-    <input type="color" name="" id="">
-
+    </div>
 </body>
 </html>
