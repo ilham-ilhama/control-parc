@@ -13,21 +13,38 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        background-image: linear-gradient(
+          65.9deg,
+          rgba(85, 228, 224, 1) 5.5%,
+          rgba(75, 68, 224, 0.74) 54.2%,
+          rgba(64, 198, 238, 1) 55.2%,
+          rgba(177, 36, 224, 1) 98.4%
+        );
         font-family: salsa;
-        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+        color: rgba(255, 255, 255, 0.701);
+      }
+      body h1 {
+        text-shadow: 0px 0px 10px white, 0px 0px 20px white, 0px 0px 40px white,
+          0px 0px 80px white;
+
+        color: rgb(255, 255, 255);
       }
       body input {
         width: 200px;
         height: 20px;
+        border-radius: 5px;
+        border: solid 2px rgba(255, 255, 255, 0);
       }
       body select {
         width: 205px;
         height: 30px;
+        border-radius: 5px;
       }
       body textarea {
         width: 200px;
         height: 40px;
         resize: none;
+        border-radius: 5px;
       }
       body input[type="radio"] {
         width: auto;
@@ -60,7 +77,11 @@
         flex-direction: column;
         align-items: center;
         gap: 30px;
-        border: solid 2px;
+        border: solid 2px white;
+        border-radius: 10px;
+        background: transparent;
+        backdrop-filter: blur(100px);
+        
       }
       body .parent {
         display: flex;
@@ -68,6 +89,10 @@
         gap: 30px;
         border: solid 2px;
         align-items: center;
+        border: solid 2px white;
+        border-radius: 10px;
+        background: transparent;
+        backdrop-filter: blur(100px);
       }
       .choix_pai {
         display: flex;
@@ -77,7 +102,7 @@
   </head>
   <body>
     <div class="titulaire">
-      <h3>parti titulaire d'annivairsaire</h3>
+      <h1>parti titulaire d'annivairsaire</h1>
       <div>
         <form>
           <label for="nom">Nom :</label><br />
@@ -149,9 +174,8 @@
         <input type="submit" id="envoyer" name="envoyer" />
       </form>
     </div>
-
     <div class="parent">
-      <h3>parti parent</h3>
+      <h1>parti parent</h1>
       <div>
         <form>
           <label for="nom">Nom :</label><br />
