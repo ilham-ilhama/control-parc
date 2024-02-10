@@ -10,7 +10,11 @@
         src: url(Salsa-Regular.ttf);
       }
       body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         font-family: salsa;
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
       }
       body input {
         width: 200px;
@@ -29,120 +33,160 @@
         width: auto;
       }
       body input[type="submit"] {
-        width:205px;
+        width: 205px;
         height: 30px;
       }
-    
+      div {
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+      }
+      .rad_invi {
+        display: flex;
+        gap: 210px;
+      }
+      .garcon {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+      }
+      .fill {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+      }
+      .titulaire {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        border: solid 2px;
+      }
+      body .parent {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border: solid 2px;
+        align-items: center;
+      }
+      .choix_pai {
+        display: flex;
+        gap: 210px;
+      }
     </style>
   </head>
   <body>
-
-
+    <div class="titulaire">
       <h3>parti titulaire d'annivairsaire</h3>
-      
-      <form>
-        <label for="nom">Nom :</label><br />
-        <input type="text" id="nom" name="nom" />
-      </form>
-      <form>
-        <label for="prenom">Prenom :</label><br />
-        <input type="text" id="prenom" name="prenom" />
-      </form>
+      <div>
+        <form>
+          <label for="nom">Nom :</label><br />
+          <input type="text" id="nom" name="nom" />
+        </form>
+        <form>
+          <label for="prenom">Prenom :</label><br />
+          <input type="text" id="prenom" name="prenom" />
+        </form>
+      </div>
 
+      <div>
+        <form>
+          <label for="age">Age :</label><br />
+          <input type="date" id="age" name="age" />
+        </form>
+        <form>
+          <label for="date">la date d'annivairsaire :</label><br />
+          <input type="datetime-local" id="date" name="date" />
+        </form>
+      </div>
 
-      <form>
-        <label for="age">Age :</label><br />
-        <input type="date" id="age" name="age" />
-      </form>
-      <form>
-        <label for="date">la date d'annivairsaire :</label><br />
-        <input type="datetime-local" id="date" name="date" />
-      </form>
+      <div>
+        <select>
+          <option>selectionnee le Formules :</option>
+          <option>MERCURE</option>
+          <option>VENUS</option>
+          <option>MARS</option>
+        </select>
+        <select>
+          <option>selectionnee la succursale</option>
+          <option>Bouskoura</option>
+          <option>Tachefine</option>
+          <option>Maarif</option>
+          <option>Californie</option>
+          <option>sidi-maarouf</option>
+        </select>
+      </div>
 
-      <select>
-        <option>selectionnee le Formules :</option>
-        <option>MERCURE</option>
-        <option>VENUS</option>
-        <option>MARS</option>
-      </select>
-      <select>
-        <option>selectionnee la succursale</option>
-        <option>Bouskoura</option>
-        <option>Tachefine</option>
-        <option>Maarif</option>
-        <option>Californie</option>
-        <option>sidi-maarouf</option>
-      </select>
-
-
-
-      <form>
-        <label for="tem">Theme :</label><br />
-        <textarea id="tem"></textarea><br />
+      <div>
+        <form>
+          <label for="tem">Theme :</label><br />
+          <textarea id="tem"></textarea><br />
         </form>
         <form>
           <label for="inviter">Nombre d'inviter :</label><br />
           <input type="number" id="inviter" name="inviter" />
         </form>
+      </div>
 
-      
-      
+      <div class="rad_invi">
         <form class="radio">
-        <div>
-          <input type="radio" id="garcon" name="choi" />
-          <label for="garcon">Garcon </label>
-        </div>
-        <div>
-          <input type="radio" id="fille" name="choi" />
-          <label for="fille">Fille </label>
-        </div>
-      </form>
-      <form>
-        <label for="inviter_nom">Nom et Prenom d'inviter :</label><br />
-        <input type="file" id="inviter_nom" name="inviter_nom" />
-      </form>
+          <div class="garcon">
+            <input type="radio" id="garcon" name="choi" />
+            <label for="garcon">Garcon </label>
+          </div>
+          <div class="fill">
+            <input type="radio" id="fille" name="choi" />
+            <label for="fille">Fille </label>
+          </div>
+        </form>
+        <form>
+          <label for="inviter_nom">Nom et Prenom d'inviter :</label><br />
+          <input type="file" id="inviter_nom" name="inviter_nom" />
+        </form>
+      </div>
 
       <form>
         <input type="submit" id="envoyer" name="envoyer" />
       </form>
-      
-      
-      
+    </div>
 
-      
-
-      
-     
-   
-    <div>
+    <div class="parent">
       <h3>parti parent</h3>
-      <form>
-        <label for="nom">Nom :</label><br />
-        <input type="text" id="nom" name="nom" />
-      </form>
-      <form>
-        <label for="prenom">Prenom :</label><br />
-        <input type="text" id="prenom" name="prenom" />
-      </form>
-      <form>
-        <label for="mail">Email:</label><br />
-        <input type="email" id="mail" name="mail" />
-      </form>
-      <form>
-        <label for="num">Numero telephone :</label><br />
-        <input type="text" id="num" name="num" />
-      </form>
-      <form>
-        <input type="radio" id="homme" name="choi" />
-        <label for="homme">Homme</label><br />
-        <input type="radio" id="femme" name="choi" />
-        <label for="femme">Femme</label>
-      </form>
-      <select>
-        <option>Paiment :</option>
-        <option>enligne</option>
-        <option>sur place</option>
-      </select>
+      <div>
+        <form>
+          <label for="nom">Nom :</label><br />
+          <input type="text" id="nom" name="nom" />
+        </form>
+        <form>
+          <label for="prenom">Prenom :</label><br />
+          <input type="text" id="prenom" name="prenom" />
+        </form>
+      </div>
+
+      <div>
+        <form>
+          <label for="mail">Email:</label><br />
+          <input type="email" id="mail" name="mail" />
+        </form>
+        <form>
+          <label for="num">Numero telephone :</label><br />
+          <input type="text" id="num" name="num" />
+        </form>
+      </div>
+      <div class="choix_pai">
+        <form>
+          <input type="radio" id="homme" name="choi" />
+          <label for="homme">Homme</label><br />
+          <input type="radio" id="femme" name="choi" />
+          <label for="femme">Femme</label>
+        </form>
+        <select>
+          <option>Paiment :</option>
+          <option>enligne</option>
+          <option>sur place</option>
+        </select>
+      </div>
+
       <form>
         <input type="submit" id="envoyer" name="envoyer" />
       </form>
