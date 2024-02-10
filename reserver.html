@@ -1,91 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Réserver</title>
-</head>
-<body>
-    <h1>Bienvenue chez nous</h1>
-    <h2>joyeux annivairsaire</h2>
-    <h3>parti parent</h3>
-    <form>
-        <label for="nom">Nom :</label><br>
-        <input type="text" id="nom" name="nom">	  
-    </form>
-    <form>
-        <label for="prenom">Prenom :</label><br>
-        <input type="text" id="prenom" name="prenom">	  
-    </form>
-    <form>
-        <label for="mail">Email:</label><br>
-        <input type="email" id="mail" name="mail">	  
-    </form>
-    <form>
-        <label for="num">Numero telephone :</label><br>
-        <input type="text" id="num" name="num">	  
-    </form>
-    <form>
-        <input type="checkbox" id="homme" name="homme">	  
-        <label for="homme">Homme :</label><br>
-        <input type="checkbox" id="femme" name="femme">
-        <label for="femme">Femme :</label>	
-    </form>
-    <select>
-        <option>Paiment :</option>
-        <option>enligne</option>
-        <option>sur place</option>
-    </select>
-    <h3>parti titulaire d'annivairsaire</h3>
-    <form>
-        <label for="nom">Nom :</label><br>
-        <input type="text" id="nom" name="nom">	  
-    </form>
-    <form>
-        <label for="prenom">Prenom :</label><br>
-        <input type="text" id="prenom" name="prenom">	  
-    </form> 
-    <form>
-        <label for="age">Age :</label><br>
-        <input type="date" id="age" name="age">	  
-    </form>
-    <form>
-        <input type="checkbox" id="garcon" name="garcon">	  
-        <label for="garcon">Garcon :</label><br>
-        <input type="checkbox" id="fille" name="fille">
-        <label for="fille">Fille :</label>	
-    </form><br>
-    <label>Theme :</label><br>
-    <textarea></textarea><br>
-    <select>
+    <style>
+      @font-face {
+        font-family: salsa;
+        src: url(Salsa-Regular.ttf);
+      }
+      body {
+        font-family: salsa;
+      }
+      body input {
+        width: 200px;
+        height: 20px;
+      }
+      body select {
+        width: 205px;
+        height: 30px;
+      }
+      body textarea {
+        width: 200px;
+        height: 40px;
+        resize: none;
+      }
+      body input[type="radio"] {
+        width: auto;
+      }
+      body input[type="submit"] {
+        width:205px;
+        height: 30px;
+      }
+    
+    </style>
+  </head>
+  <body>
+
+
+      <h3>parti titulaire d'annivairsaire</h3>
+      
+      <form>
+        <label for="nom">Nom :</label><br />
+        <input type="text" id="nom" name="nom" />
+      </form>
+      <form>
+        <label for="prenom">Prenom :</label><br />
+        <input type="text" id="prenom" name="prenom" />
+      </form>
+
+
+      <form>
+        <label for="age">Age :</label><br />
+        <input type="date" id="age" name="age" />
+      </form>
+      <form>
+        <label for="date">la date d'annivairsaire :</label><br />
+        <input type="datetime-local" id="date" name="date" />
+      </form>
+
+      <select>
         <option>selectionnee le Formules :</option>
         <option>MERCURE</option>
         <option>VENUS</option>
         <option>MARS</option>
-    </select>
-    <form>
-        <label for="inviter">Nombre d'inviter :</label><br>
-        <input type="number" id="inviter" name="inviter">	  
-    </form>  
-    <form>
-        <label for="inviter_nom">Nom et Prenom d'inviter :</label><br>
-        <input type="file" id="inviter_nom" name="inviter_nom">	  
-    </form>  
-    <form>
-        <label for="date">la date d'annivairsaire :</label><br>
-        <input type="datetime-local" id="date" name="date">	  
-    </form>
-
-    <select>
+      </select>
+      <select>
         <option>selectionnee la succursale</option>
         <option>Bouskoura</option>
         <option>Tachefine</option>
         <option>Maarif</option>
         <option>Californie</option>
         <option>sidi-maarouf</option>
-    </select>
-    <form>
-        <input type="submit" id="envoyer" name="envoyer">
-    </form>
-</body>
+      </select>
+
+
+
+      <form>
+        <label for="tem">Theme :</label><br />
+        <textarea id="tem"></textarea><br />
+        </form>
+        <form>
+          <label for="inviter">Nombre d'inviter :</label><br />
+          <input type="number" id="inviter" name="inviter" />
+        </form>
+
+      
+      
+        <form class="radio">
+        <div>
+          <input type="radio" id="garcon" name="choi" />
+          <label for="garcon">Garcon </label>
+        </div>
+        <div>
+          <input type="radio" id="fille" name="choi" />
+          <label for="fille">Fille </label>
+        </div>
+      </form>
+      <form>
+        <label for="inviter_nom">Nom et Prenom d'inviter :</label><br />
+        <input type="file" id="inviter_nom" name="inviter_nom" />
+      </form>
+
+      <form>
+        <input type="submit" id="envoyer" name="envoyer" />
+      </form>
+      
+      
+      
+
+      
+
+      
+     
+   
+    <div>
+      <h3>parti parent</h3>
+      <form>
+        <label for="nom">Nom :</label><br />
+        <input type="text" id="nom" name="nom" />
+      </form>
+      <form>
+        <label for="prenom">Prenom :</label><br />
+        <input type="text" id="prenom" name="prenom" />
+      </form>
+      <form>
+        <label for="mail">Email:</label><br />
+        <input type="email" id="mail" name="mail" />
+      </form>
+      <form>
+        <label for="num">Numero telephone :</label><br />
+        <input type="text" id="num" name="num" />
+      </form>
+      <form>
+        <input type="radio" id="homme" name="choi" />
+        <label for="homme">Homme</label><br />
+        <input type="radio" id="femme" name="choi" />
+        <label for="femme">Femme</label>
+      </form>
+      <select>
+        <option>Paiment :</option>
+        <option>enligne</option>
+        <option>sur place</option>
+      </select>
+      <form>
+        <input type="submit" id="envoyer" name="envoyer" />
+      </form>
+    </div>
+  </body>
 </html>
