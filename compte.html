@@ -1,77 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Créer Compte</title>
     <style>
-        body input{
-            border-radius: 50% 80% / 70% 10%;
-            
-        }
-        body img{
-            width: 50%;
-        }
-        body .img{
-            height: 180px;
-            width:17%;
-        }
-        body .img_formulaire{
-            display: flex;
-            flex-direction: column;  
-        }
-        body .les_images{
-            display: flex;
-            flex-direction: column;
-        }
+      body {
+        background-image: linear-gradient(
+          114.2deg,
+          rgba(121, 194, 243, 1) 22.6%,
+          rgba(255, 180, 239, 1) 67.7%
+        );
+      }
+      input{
+        width:15% ;
+        height:20px; 
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid;
+      }
+     select{
+        width:15% ;
+        height:20px; 
+        background: transparent; 
+     }
+     button{
+        width:15% ;
+        height:20px; 
+     }
+     
+       
+   
+      body .tous{
+        border: solid 2px black;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+       
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Bienvenue</h1>
     <h2>formulair pour s'inscrire</h2>
-
-    <div class="les_images">
-    <img src="les_images/reservation_aniv/zyro-image (4).png">
-    <img class="img" src="les_images/reservation_aniv/zyro-image (6).png">
-    </div>
-    
-    <div>
+    <div class="tous">
     <form>
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" />
     </form>
     <form>
-        <label for="prenom">Prenom :</label>
-        <input type="text" id="prenom" name="prenom">
+      <label for="prenom">Prenom :</label>
+      <input type="text" id="prenom" name="prenom" />
     </form>
     <form>
-        <label for="date">date naissance :</label>
-        <input type="date" id="prenom" name="prenom">
+      <label for="date">date naissance :</label>
+      <input type="date" id="prenom" name="prenom" />
     </form>
-    <input type="radio" id="homme" name="choi">
+    <input type="radio" id="homme" name="choi" />
     <label for="homme">Homme</label>
-    <input type="radio" id="femme" name="choi">
-    <label for="femme">Femme</label> <br>
+    <input type="radio" id="femme" name="choi" />
+    <label for="femme">Femme</label> <br />
     <select>
-        <option>ville</option>
-        <option>casa blanca</option>
-        <option>rabat</option>
-        <option>tanger</option>
-        <option>marakech</option>
-        <option>agadir</option>
-        <option>warzazat</option>
+      <option>ville</option>
+      <option>casa blanca</option>
+      <option>rabat</option>
+      <option>tanger</option>
+      <option>marakech</option>
+      <option>agadir</option>
+      <option>warzazat</option>
     </select>
     <form>
-        <label for="mail">Email :</label>
-        <input type="email" id="mail" name="mail">
+      <label for="mail">Email :</label>
+      <input type="email" id="mail" name="mail" />
     </form>
     <form>
-        <label for="num">Numero telephone :</label>
-        <input type="text" id="num" name="num">
+      <label for="num">Numero telephone :</label>
+      <input type="text" id="num" name="num" />
     </form>
-    <form>
-        <input type="submit" id="envoyer" name="envoyer">
-    </form>
-    </div>
-</body>
+    <button>Envoyer</button>
+</div>
+  </body>
 </html>
