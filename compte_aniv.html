@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Créer Compte</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #d9afd9;
+        background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+      }
+      input {
+        width: 120px;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid;
+        color: white;
+      }
+      select {
+        width: 200px;
+        height: 20px;
+        background: transparent;
+        margin-right: 80px;
+        color: white;
+        border: solid 1px white;
+      }
+      button {
+        width: 100px;
+        height: 30px;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        border: solid 2px white;
+      }
+      .radio {
+        display: flex;
+        width: 200px;
+      }
+
+      body .tous {
+        width: 400px;
+        height: auto;
+        border: solid 2px white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-top: 15px;
+        background-image: linear-gradient(
+          114.2deg,
+          rgba(121, 194, 243, 1) 22.6%,
+          rgba(255, 180, 239, 1) 67.7%
+        );
+      }
+      .premier {
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+        gap: 30px;
+      }
+      .deuxiem {
+        margin-right: 62px;
+      }
+      .troixiem {
+        margin-right: 30px;
+      }
+      label {
+        color: white;
+      }
+      h1 {
+        background: linear-gradient(
+          to right,
+          rgba(0, 168, 253),
+          #fff 35%,
+          #e00a95
+        );
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient 3s linear infinite;
+        font-size: 80px;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 75%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 70%;
+        }
+      }
+      .rose {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 10%;
+      }
+      .blans{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="rose" src="les_images/reservation_aniv/ballons-blanc.png" />
+    <img class="blans" src="les_images/reservation_aniv/ballons-rose.png">
+    <div class="titre">
+      <h1>Bienvenue</h1>
+    </div>
+    <div class="tous">
+      <div class="premier">
+        <form>
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" />
+        </form>
+        <form>
+          <label for="prenom">Prenom :</label>
+          <input type="text" id="prenom" name="prenom" />
+        </form>
+        <form>
+          <label for="mail">Email :</label>
+          <input type="email" id="mail" name="mail" />
+        </form>
+      </div>
+      <form class="deuxiem">
+        <label for="date">date naissance :</label>
+        <input type="date" id="prenom" name="prenom" />
+      </form>
+      <form class="troixiem">
+        <label for="num">Numero telephone :</label>
+        <input type="text" id="num" name="num" />
+      </form>
+
+      <select>
+        <option>ville</option>
+        <option>casa blanca</option>
+        <option>rabat</option>
+        <option>tanger</option>
+        <option>marakech</option>
+        <option>agadir</option>
+        <option>warzazat</option>
+      </select>
+      <form class="radio">
+        <input type="radio" id="homme" name="choi" />
+        <label for="homme">Homme</label>
+
+        <input type="radio" id="femme" name="choi" />
+        <label for="femme">Femme</label>
+      </form>
+
+      <button>Envoyer</button>
+    </div>
+  </body>
+</html>
