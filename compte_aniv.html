@@ -133,8 +133,8 @@
 
       }
       @keyframes ballons_rose{
-        0% {top: ;}
-        100% {}
+        0% { top: -1vh;}
+        100% {top: 100vh;}
       }
 
       .rose {
@@ -142,6 +142,9 @@
         top: 0;
         left: 0;
         width: 10%;
+        animation-name:ballons_rose;
+        animation-duration:3s;
+        animation-iteration-count: infinite;
       }
       .blans {
         position: fixed;
@@ -152,9 +155,13 @@
         animation-duration:3s;
         animation-iteration-count: infinite;
       }
+      option{
+        color: rgb(121, 194, 243);
+      }
     </style>
   </head>
   <body>
+    <input type="color">
     <img class="rose" src="les_images/reservation_aniv/ballons-blanc.png" />
     <img class="blans" src="les_images/reservation_aniv/ballons-rose.png" />
     <div class="titre">
