@@ -5,17 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Réservations anniversaires</title>
     <style>
-      @keyframes rien {
-        0% {
-          transform: translateY(2px);
-        }
-        50% {
-          transform: translateY(20px);
-        }
-        100% {
-          transform: translateY(2px);
-        }
-      }
+   
       body {
         background: rgb(241, 237, 226);
         background: radial-gradient(
@@ -122,6 +112,7 @@
         top: 0;
         left: 0;
         width: 18%;
+       
       }
       body .ballons2 {
         position: fixed;
@@ -134,12 +125,21 @@
         width: 30%;
         top: 0;
         right: 0;
+        animation-name: truc1;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
       }
       body .truc2 {
         position: fixed;
         width: 30%;
         top: 0;
         left: 200px;
+        animation-name: truc2;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        
       }
       body .gateaux {
         position: fixed;
@@ -151,14 +151,38 @@
         position: fixed;
         width: 20%;
         left: 0;
-        bottom: -5px;
+        bottom: -10px;
+        animation-name: deco;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+      
       }
       body .deco2 {
         position: fixed;
         width: 20%;
         left: 300px;
-        bottom: -5px;
+        bottom: -10px;
+        animation-name: deco;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+  
       }
+      
+    @keyframes truc1{
+      0%,100%{right: 0px;}
+      50% {right: 70px;}
+    }
+    @keyframes  truc2{
+      0%,100%{left:200px;}
+      50% {left:270px;}
+    }
+    @keyframes deco{
+      0%,100%{bottom: -20px;}
+      50% {bottom: 0px;}
+    }
+ 
     </style>
   </head>
   <body>
