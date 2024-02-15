@@ -71,19 +71,20 @@
         color: rgba(72, 76, 179);
     }
     img{
-        width: 20vw;
+        width: 15vw;
         position: absolute;
         left: 0px;
         top: 0px;
         transform:rotate(-20deg); 
+        animation-name: cartable;
         animation-duration: 4s;
         animation-iteration-count: infinite;
       
     }
     @keyframes cartable{
-        0%{}
-        50%{}
-        100%{}
+        0%,100%{top:0px ;}
+        50%{top: 50px; ;}
+        
     }
 
     
