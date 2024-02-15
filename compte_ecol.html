@@ -1,10 +1,137 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criee Compte</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(
+          270.3deg,
+          rgba(84, 212, 228, 1) 0.2%,
+          rgba(68, 36, 164, 1) 100%
+        );
+        color: white;
+        
+        
+      }
+      body .tous {
+        width: 40vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        border: solid 2px;
+        align-items: center;
+        justify-content: center;
+      }
+      body div {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+      }
+      body form {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .radio {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+      button{
+     background-color:rgba(72, 76, 179) ;
+     color: white;
+     height:30px ;
+     width:100px ;
+     border: solid 1px white;
+    border-radius: 2px;
+    outline: none;
+
+    }
+    button:hover{
+        background-color: rgb(83,200,224);
+    }
+    button:focus{
+        background-color: rgb(83,200,224);
+        box-shadow: 1px 1px 20px 10px rgb(83,200,224);
+        border-radius: 10px;
+    }
+    input{
+        outline: none;
+        height: 25px;
+        color: rgba(72, 76, 179);
+    }
+    textarea{
+        outline: none;
+        resize: none;
+        width:200px ;
+        color: rgba(72, 76, 179);
+    }
+    img{
+        width: 20vw;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        transform:rotate(-20deg); 
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      
+    }
+    @keyframes cartable{
+        0%{}
+        50%{}
+        100%{}
+    }
+
     
-</body>
+      
+    </style>
+  </head>
+  <body>
+    <img src="les_images/reservation_ecol/cartable-removebg-preview.png">
+    <div class="tous">
+      <form>
+        <label for="eco">Nom Ecole :</label>
+        <input type="text" id="eco" name="eco" />
+      </form>
+
+      <div>
+        <form>
+          <label for="nom">Nom directeur(e) :</label>
+          <input type="text" id="nom" name="nom" />
+        </form>
+        <form>
+          <label for="prenom">Prenom directeure :</label>
+          <input type="text" id="prenom" name="prenom" />
+        </form>
+      </div>
+
+      <form class="radio">
+        <input type="radio" id="homme" name="chois" />
+        <label for="homme">Homme</label>
+        <input type="radio" id="femme" name="chois" />
+        <label for="femme">Femme</label>
+      </form>
+
+      <div>
+        <form>
+          <label for="mail">Gmail :</label>
+          <input type="email" id="mail" name="mail" />
+        </form>
+        <form>
+          <label for="num">Numero telephone :</label>
+          <input type="text" id="num" name="num" />
+        </form>
+      </div>
+
+      <form>
+        <label for="adresse">Adresse Ecole :</label>
+        <textarea></textarea>
+      </form>
+      <button>Envoyer</button>
+    </div>
+  </body>
 </html>
