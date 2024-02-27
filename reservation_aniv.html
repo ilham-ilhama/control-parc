@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Réservations anniversaires</title>
     <style>
-   
       body {
         background: rgb(241, 237, 226);
         background: radial-gradient(
@@ -65,7 +64,7 @@
         color: rgb(140, 137, 137);
         font-family: salsa;
       }
-      .cart a:last-of-type{
+      .cart a:last-of-type {
         width: 30%;
       }
 
@@ -82,7 +81,6 @@
         );
         font-family: Arial, Helvetica, sans-serif;
         color: rgb(120, 118, 118);
-    
       }
       body .cart button:hover {
         box-shadow: 10px 10px 5px 2px rgba(129, 127, 127, 0.765);
@@ -101,8 +99,8 @@
         padding-left: 80px;
         color: rgb(120, 118, 118);
       }
-      .cart:hover .cree{
-       padding-right: 30px;
+      .cart:hover .cree {
+        padding-right: 30px;
       }
       body .cree:hover {
         color: azure;
@@ -112,7 +110,6 @@
         top: 0;
         left: 0;
         width: 18%;
-       
       }
       body .ballons2 {
         position: fixed;
@@ -139,7 +136,6 @@
         animation-duration: 4s;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
-        
       }
       body .gateaux {
         position: fixed;
@@ -156,7 +152,6 @@
         animation-duration: 4s;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
-      
       }
       body .deco2 {
         position: fixed;
@@ -167,22 +162,105 @@
         animation-duration: 4s;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
-  
       }
-      
-    @keyframes truc1{
-      0%,100%{right: 0px;}
-      50% {right: 70px;}
-    }
-    @keyframes  truc2{
-      0%,100%{left:200px;}
-      50% {left:270px;}
-    }
-    @keyframes deco{
-      0%,100%{bottom: -20px;}
-      50% {bottom: 0px;}
-    }
- 
+
+      @keyframes truc1 {
+        0%,
+        100% {
+          right: 0px;
+        }
+        50% {
+          right: 70px;
+        }
+      }
+      @keyframes truc2 {
+        0%,
+        100% {
+          left: 200px;
+        }
+        50% {
+          left: 270px;
+        }
+      }
+      @keyframes deco {
+        0%,
+        100% {
+          bottom: -20px;
+        }
+        50% {
+          bottom: 0px;
+        }
+      }
+      @media (max-width: 800px) {
+        body .deco1 {
+          width: 30%;
+        }
+        body .deco2 {
+          width: 30%;
+        }
+        body .gateaux {
+          width: 25%;
+        }
+        body .truc2 {
+          width: 50%;
+        }
+        body .truc1 {
+          width: 50%;
+        }
+        body .ballons1 {
+          width: 28%;
+        }
+        body .ballons2 {
+          width: 25%;
+        }
+        body .cart {
+          margin-bottom: 100px;
+          font-size: 18px;
+          background-color: rgba(247, 245, 241, 0.413);
+          clip-path: blur(50px);
+          backdrop-filter: none;
+        }
+        input {
+          font-size: 18px;
+        }
+        button {
+          font-size: 16px;
+        }
+      }
+      @media (max-width: 450px) {
+        body .gateaux {
+          display: none;
+        }
+        body .cart {
+          margin: 0;
+        }
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        body .deco1 {
+          width: 40%;
+        }
+        body .deco2 {
+          display: none;
+        }
+        .deco1 {
+          display: none;
+        }
+        body .truc2 {
+          display: none;
+        }
+        body .truc1 {
+          display: none;
+        }
+        body .ballons1 {
+          width: 38%;
+        }
+        body .ballons2 {
+          width: 35%;
+        }
+      }
     </style>
   </head>
   <body>
