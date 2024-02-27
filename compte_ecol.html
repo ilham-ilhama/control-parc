@@ -84,7 +84,47 @@
     @keyframes cartable{
         0%,100%{top:0px ;}
         50%{top: 50px; ;}    
-    }   
+    } 
+    @media (max-width:800px){
+      body .tous{  
+        width: 60vw;
+        height: 80vh;
+        display: flex;
+        flex-direction:column;
+      }
+      img{
+        width: 20vw;
+      }
+    }  
+    @media (max-width:450px){
+      img{
+       display: none;
+      }
+      body div{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+      }
+      input{
+        height: 30px;
+        width: 200px;
+      }
+      .radio {
+        display: flex;
+        flex-direction: row;
+        gap:3px;
+        width: 200px;
+      }
+        body .tous{ 
+        width: 90%;
+        font-size: 25px;
+      }
+      button{
+        height:40px ;
+        font-size: 20px;
+     width:130px ;
+      }
+}  
     </style>
   </head>
   <body>
