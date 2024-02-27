@@ -94,7 +94,67 @@
         .titre2:hover{
             text-decoration: underline;
         }
+        @media (max-width:860px){
+            body{
+             display: flex;
+             flex-direction: column;
+             gap: 10px;
+             
+             align-items: center;
+            }
+            .enfans{
+                margin: 0;
+                width: 80%;
 
+            }
+            .directeur{
+                margin: 0;
+                width: 80%;
+
+            }
+            .titre1{
+                margin-top: 30px;
+                margin-left: 0;
+            }
+            .titre2{
+                margin-top: 100px;
+                margin-left: 0;
+            }
+        }
+        @media (max-width:450px){
+            body{
+                display: flex;
+
+            }
+            .enfans{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                height: 350px;
+                gap: 15px;
+            }
+            form{
+            display: flex;
+            flex-direction:column ;
+            gap: 8px;
+            }
+            .directeur{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                height: 350px;
+                gap: 15px;
+            }
+            .titre1{
+                margin-top: 30px;
+                margin-left: 0;
+            }
+            .titre2{
+                margin-top: 20px;
+                margin-left: 0;
+            }
+         
+    }
     </style>
 </head>
 <body>
