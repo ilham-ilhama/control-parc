@@ -8,12 +8,41 @@
       div {
         height: 100px;
       }
+      body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
       header {
-        width: 100%;
+        width: 90%;
         height: 350px;
-        background-image:url(les_images/cafeteria/header.jpg) ;
-        background-size: 50% 100%;
-        background-repeat: no-repeat;
+        background-color: bisque;
+       
+      }
+      .div1{
+        display: flex;
+        width: 95%;
+        height: 500px;
+        background-color: aqua;
+        align-items: center;
+        justify-content: center;
+      }
+      .bac-head{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        bottom:50px;
+        z-index: 900;
+        left: 400px;
+      }
+      .le-titre{
+        border: solid 2px;
+        height: 200px;
+        width: 300px;
+        position: relative;
+        left: 610px;
+        bottom:180px ;
       }
       main {
         display: flex;
@@ -398,42 +427,57 @@
       main article {
         border: 8px double;
       }
-
-
-
-
     </style>
   </head>
   <body>
     <div></div>
-    <header>
-      <p>Bienvenue dans notre cafeteria</p>
-    </header>
+    <div class="div1">
+        
+      <header>
+        <img class="bac-head" src="les_images/backgroundheader6.jpg">
+        <div class="le-titre">
+        <h1>bienvenu</h1>
+        <p>Bienvenue dans notre cafeteria</p>
+        </div>
+      </header>
+    </div>
     <main>
       <h1>sucre</h1>
       <div class="sucre1">
         <article>
           <h3>crep</h3>
-          <img src="les_images/cafeteria/crepnutell.jpg" alt="image non atrouvable"/>
+          <img
+            src="les_images/cafeteria/crepnutell.jpg"
+            alt="image non atrouvable"
+          />
           <h3>30 dh</h3>
           <button></button>
         </article>
 
         <article>
           <h3>crep</h3>
-          <img src="les_images/cafeteria/gaufres-fraise.jpg" alt="image non atrouvable"/>
+          <img
+            src="les_images/cafeteria/gaufres-fraise.jpg"
+            alt="image non atrouvable"
+          />
           <h3>30 dh</h3>
           <button></button>
         </article>
         <article>
           <h3>crep</h3>
-          <img src="les_images/cafeteria/painkek.jpg"alt="image non atrouvable" />
+          <img
+            src="les_images/cafeteria/painkek.jpg"
+            alt="image non atrouvable"
+          />
           <h3>30 dh</h3>
           <button></button>
         </article>
         <article>
           <h3>crep</h3>
-          <img src="les_images/cafeteria/crepcaramel.jpg" alt="image non atrouvable"/>
+          <img
+            src="les_images/cafeteria/crepcaramel.jpg"
+            alt="image non atrouvable"
+          />
           <h3>30 dh</h3>
           <button></button>
         </article>
@@ -441,26 +485,38 @@
       <div class="sucre2">
         <article>
           <h3>crep</h3>
-          <img src="les_images/cafeteria/painkeknuttel.jpg" alt="image non atrouvable"/>
+          <img
+            src="les_images/cafeteria/painkeknuttel.jpg"
+            alt="image non atrouvable"
+          />
           <h3>30 dh</h3>
           <button></button>
         </article>
 
         <article>
           <h3>crep</h3>
-          <img src="les_images/cafeteria/crepchok.jpg" alt="image non atrouvable"/>
+          <img
+            src="les_images/cafeteria/crepchok.jpg"
+            alt="image non atrouvable"
+          />
           <h3>30 dh</h3>
           <button></button>
         </article>
         <article>
           <h3>crep</h3>
-          <img src="les_images/cafeteria/gofrechoko.jpg" alt="image non atrouvable"/>
+          <img
+            src="les_images/cafeteria/gofrechoko.jpg"
+            alt="image non atrouvable"
+          />
           <h3>30 dh</h3>
           <button></button>
         </article>
         <article>
           <h3>crep</h3>
-          <img src="les_images/cafeteria/tiramisu.jpg" alt="image non atrouvable"/>
+          <img
+            src="les_images/cafeteria/tiramisu.jpg"
+            alt="image non atrouvable"
+          />
           <h3>30 dh</h3>
           <button></button>
         </article>
@@ -576,6 +632,5 @@
         </article>
       </div>
     </main>
-  
   </body>
 </html>
