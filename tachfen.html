@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tachefine</title>
+    <style>
+      .main_aside {
+        display: flex;
+        flex-direction: row;
+      }
+      main {
+        background-color: aqua;
+        width: 70%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      aside {
+        background-color: blue;
+        width: 30%;
+      }
+      main img {
+        width: 150px;
+        height: 150px;
+      }
+      main div:first-of-type img:first-of-type {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        top: 50px;
+        right: 100px;
+        z-index: 999;
+      }
+      main div:first-of-type img:nth-of-type(2) {
+        position: relative;
+        right: 90px;
+        z-index: 999;
+      }
+      main div:first-of-type img:nth-of-type(3) {
+        position: relative;
+        left: 100px;
+        top: 20px;
+        z-index: 999;
+      }
+      main div:nth-of-type(2) img:first-of-type {
+        position: relative;
+        bottom: 40px;
+        left: 20px;
+      }
+      main div:nth-of-type(2) img:nth-of-type(2) {
+        position: relative;
+        bottom: 220px;
+        left: 50px;
+        z-index: 999;
+      }
+      main div:nth-of-type(2) img:last-of-type {
+        position: relative;
+        left: 50px;
+        bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <div class="main_aside">
+      <main>
+        <div>
+          <img src="les_images/tachfin/img2.jpg" alt="image non atrouvable!" />
+          <img src="les_images/tachfin/img1.webp" alt="image non atrouvable!" />
+          <img src="les_images/tachfin/img3.jpg" alt="image non atrouvable!" />
+        </div>
+        <div>
+          <img src="les_images/tachfin/img4.jpg" alt="image non atrouvable!" />
+          <img src="les_images/tachfin/img5.jpg" alt="image non atrouvable!" />
+          <img src="les_images/tachfin/img6.jpg" alt="image non atrouvable!" />
+        </div>
+      </main>
+      <aside></aside>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafeteria</title>
+    <style>
+      div {
+        height: 100px;
+      }
+      header {
+        width: 100%;
+        height: 350px;
+        background-image:url(les_images/cafeteria/header.jpg) ;
+        background-size: 50% 100%;
+        background-repeat: no-repeat;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        height: 3000px;
+      }
+      main .sucre1 {
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      main .sucre1:first-of-type article:nth-of-type(1) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sucre1:first-of-type article:nth-of-type(2) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sucre1:first-of-type article:nth-of-type(3) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sucre1:first-of-type article:nth-of-type(4) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sucre1:first-of-type article:nth-of-type(1) button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sucre1:first-of-type article:nth-of-type(2) button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+      }
+      main .sucre1:first-of-type article:nth-of-type(3) button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+      }
+      main .sucre1:first-of-type article:nth-of-type(4) button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+      }
+
+      main .sucre2 {
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      main .sucre2:nth-of-type(2) article:nth-of-type(1) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sucre2:nth-of-type(2) article:nth-of-type(2) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sucre2:nth-of-type(2) article:nth-of-type(3) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sucre2:nth-of-type(2) article:nth-of-type(4) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sucre2:nth-of-type(2) article:nth-of-type(1) button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sucre2:nth-of-type(2) article:nth-of-type(2) button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+      }
+      main .sucre2:nth-of-type(2) article:nth-of-type(3) button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+      }
+      main .sucre2:nth-of-type(2) article:nth-of-type(4) button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+        display: flex;
+      }
+
+      main .sale1 {
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      main .sale1:nth-of-type(3) article:nth-of-type(1) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sale1:nth-of-type(3) article:nth-of-type(2) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sale1:nth-of-type(3) article:nth-of-type(3) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sale1:nth-of-type(3) article:nth-of-type(4) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sale1:nth-of-type(3) article:nth-of-type(1) button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sale1:nth-of-type(3) article:nth-of-type(2) button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+      }
+      main .sale1:nth-of-type(3) article:nth-of-type(3) button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+      }
+      main .sale1:nth-of-type(3) article:nth-of-type(4) button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+      }
+      main .sale2 {
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      main .sale2:nth-of-type(4) article:nth-of-type(1) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sale2:nth-of-type(4) article:nth-of-type(2) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sale2:nth-of-type(4) article:nth-of-type(3) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sale2:nth-of-type(4) article:nth-of-type(4) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sale2:nth-of-type(4) article:nth-of-type(1) button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .sale2:nth-of-type(4) article:nth-of-type(2) button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+      }
+      main .sale2:nth-of-type(4) article:nth-of-type(3) button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+      }
+      main .sale2:nth-of-type(4) article:nth-of-type(4) button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+      }
+
+      main .boisson1 {
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      main .boisson1:nth-of-type(5) article:nth-of-type(1) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .boisson1:nth-of-type(5) article:nth-of-type(2) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .boisson1:nth-of-type(5) article:nth-of-type(3) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .boisson1:nth-of-type(5) article:nth-of-type(4) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main
+        .boisson1:nth-of-type(5)
+        article:nth-of-type(1)
+        button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main
+        .boisson1:nth-of-type(5)
+        article:nth-of-type(2)
+        button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+      }
+      main
+        .boisson1:nth-of-type(5)
+        article:nth-of-type(3)
+        button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+      }
+      main
+        .boisson1:nth-of-type(5)
+        article:nth-of-type(4)
+        button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+      }
+      main .boisson2 {
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      main .boisson2:nth-of-type(6) article:nth-of-type(1) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .boisson2:nth-of-type(6) article:nth-of-type(2) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .boisson2:nth-of-type(6) article:nth-of-type(3) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .boisson2:nth-of-type(6) article:nth-of-type(4) {
+        height: 400px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main
+        .boisson2:nth-of-type(6)
+        article:nth-of-type(1)
+        button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main
+        .boisson2:nth-of-type(6)
+        article:nth-of-type(2)
+        button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+      }
+      main
+        .boisson2:nth-of-type(6)
+        article:nth-of-type(3)
+        button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+      }
+      main
+        .boisson2:nth-of-type(6)
+        article:nth-of-type(4)
+        button:first-of-type {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+      }
+      main img {
+        height: 240px;
+        width: 90%;
+        border: 4px groove rgba(0, 0, 0, 0.237);
+      }
+      main article {
+        border: 8px double;
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <header>
+      <p>Bienvenue dans notre cafeteria</p>
+    </header>
+    <main>
+      <h1>sucre</h1>
+      <div class="sucre1">
+        <article>
+          <h3>crep</h3>
+          <img src="les_images/cafeteria/crepnutell.jpg" alt="image non atrouvable"/>
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+
+        <article>
+          <h3>crep</h3>
+          <img src="les_images/cafeteria/gaufres-fraise.jpg" alt="image non atrouvable"/>
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+        <article>
+          <h3>crep</h3>
+          <img src="les_images/cafeteria/painkek.jpg"alt="image non atrouvable" />
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+        <article>
+          <h3>crep</h3>
+          <img src="les_images/cafeteria/crepcaramel.jpg" alt="image non atrouvable"/>
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+      </div>
+      <div class="sucre2">
+        <article>
+          <h3>crep</h3>
+          <img src="les_images/cafeteria/painkeknuttel.jpg" alt="image non atrouvable"/>
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+
+        <article>
+          <h3>crep</h3>
+          <img src="les_images/cafeteria/crepchok.jpg" alt="image non atrouvable"/>
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+        <article>
+          <h3>crep</h3>
+          <img src="les_images/cafeteria/gofrechoko.jpg" alt="image non atrouvable"/>
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+        <article>
+          <h3>crep</h3>
+          <img src="les_images/cafeteria/tiramisu.jpg" alt="image non atrouvable"/>
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+      </div>
+      <h1>sale</h1>
+      <div class="sale1">
+        <article>
+          <h3>crep</h3>
+          <img />
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+
+        <article>
+          <h3>crep</h3>
+          <img />
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+        <article>
+          <h3>crep</h3>
+          <img />
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+        <article>
+          <h3>crep</h3>
+          <img />
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+      </div>
+      <div class="sale2">
+        <article>
+          <h3>crep</h3>
+          <img />
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+
+        <article>
+          <h3>crep</h3>
+          <img />
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+        <article>
+          <h3>crep</h3>
+          <img />
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+        <article>
+          <h3>crep</h3>
+          <img />
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+      </div>
+      <h1>boisson</h1>
+      <div class="boisson1">
+        <article>
+          <h3>crep</h3>
+          <img />
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+
+        <article>
+          <h3>crep</h3>
+          <img />
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+        <article>
+          <h3>crep</h3>
+          <img />
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+        <article>
+          <h3>crep</h3>
+          <img />
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+      </div>
+      <div class="boisson2">
+        <article>
+          <h3>crep</h3>
+          <img />
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+
+        <article>
+          <h3>crep</h3>
+          <img />
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+        <article>
+          <h3>crep</h3>
+          <img />
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+        <article>
+          <h3>crep</h3>
+          <img />
+          <h3>30 dh</h3>
+          <button></button>
+        </article>
+      </div>
+    </main>
+  
+  </body>
+</html>
