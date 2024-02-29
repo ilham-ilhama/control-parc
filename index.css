@@ -211,10 +211,7 @@ footer .tous {
   padding-top: 20px;
   color: rgba(255, 255, 255, 0.674);
 }
-footer {
-  display: flex;
-  flex-direction: column;
-}
+
 footer .paragraph-logo {
   display: flex;
   flex-direction: column;
