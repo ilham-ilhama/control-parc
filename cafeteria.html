@@ -16,34 +16,76 @@
       }
       header {
         width: 90%;
-        height: 350px;
-        background-color: bisque;
+        height: 400px;
+        background-color: rgba(232, 211, 185, 0.824);
+        box-shadow: 0 0 50px 10px rgba(50,50,50,0.25);
        
       }
       .div1{
         display: flex;
         width: 95%;
-        height: 500px;
-        background-color: aqua;
-        align-items: center;
+        height: 480px;
+        background-color: rgba(145, 138, 103, 0.71);
+        align-items: end;
         justify-content: center;
       }
       .bac-head{
         width: 200px;
         height: 200px;
         position: relative;
-        bottom:50px;
-        z-index: 900;
+        bottom:80px;
         left: 400px;
+       
       }
       .le-titre{
-        border: solid 2px;
-        height: 200px;
-        width: 300px;
+        height: 300px;
+        width: 200px;
         position: relative;
         left: 610px;
-        bottom:180px ;
+        bottom: 450px;
       }
+      header h1{
+        color: rgb(189, 141, 78);
+      }
+      header h4{
+       font-size: 15px;
+       color: rgb(172, 87, 87);
+      }
+      header p{
+        font-size: 13px;
+       color:rgba(145, 138, 103, 0.71)
+      }
+      header:first-of-type img:nth-of-type(2){
+        width: 200px;
+        position: relative;
+        top: 175px;
+        left: 150px;
+      }
+      header:first-of-type img:nth-of-type(3){
+        width: 170px;
+        position: relative;
+        top: 175px;
+        left: 200px;
+    }
+    header:first-of-type img:nth-of-type(4){
+        width: 200px;
+        position: relative;
+        top: 100px;
+        right: 400px;
+    }
+    header:first-of-type img:nth-of-type(5){
+        width: 150px;
+        position: relative;
+        left: 130px; 
+    }
+    header:first-of-type img:nth-of-type(6){
+        width: 150px;
+        position: relative;
+        bottom: 54px;
+    
+       
+    }
+
       main {
         display: flex;
         flex-direction: column;
@@ -84,28 +126,28 @@
         align-items: center;
       }
       main .sucre1:first-of-type article:nth-of-type(1) button:first-of-type {
-        background-color: red;
+        background-color:rgba(232, 211, 185, 0.824);
         height: 30px;
         width: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        border: 1px solid  rgba(145, 138, 103, 0.71) ;
       }
       main .sucre1:first-of-type article:nth-of-type(2) button:first-of-type {
-        background-color: red;
+        background-color:rgba(232, 211, 185, 0.824);
         height: 30px;
         width: 100px;
+       
       }
       main .sucre1:first-of-type article:nth-of-type(3) button:first-of-type {
-        background-color: red;
+        background-color:rgba(232, 211, 185, 0.824);
         height: 30px;
         width: 100px;
       }
       main .sucre1:first-of-type article:nth-of-type(4) button:first-of-type {
-        background-color: red;
+        background-color:rgba(232, 211, 185, 0.824);
         height: 30px;
         width: 100px;
       }
+
 
       main .sucre2 {
         height: 500px;
@@ -422,11 +464,15 @@
       main img {
         height: 240px;
         width: 90%;
-        border: 4px groove rgba(0, 0, 0, 0.237);
+        border:  solid 1px rgba(232, 211, 185, 0.824);
+        box-shadow: 0 0 10px 8px rgba(232, 211, 185, 0.824) ;
+
       }
       main article {
-        border: 8px double;
+        border: 8px double rgba(145, 138, 103, 0.614);
+        box-shadow: 0 0 20px 5px rgba(145, 138, 103, 0.34) ;
       }
+   
     </style>
   </head>
   <body>
@@ -434,10 +480,16 @@
     <div class="div1">
         
       <header>
-        <img class="bac-head" src="les_images/backgroundheader6.jpg">
+        <img class="bac-head" src="les_images/cafeteria/imghead.jpg">
+        <img  src="les_images/cafeteria/head1.png">
+        <img  src="les_images/cafeteria/header3.png">
+        <img  src="les_images/cafeteria/header2.png">
+        <img src="les_images/cafeteria/fleurs-removebg-preview.png">
+        <img src="les_images/cafeteria/fleurs-removebg-preview 2.png">
         <div class="le-titre">
-        <h1>bienvenu</h1>
-        <p>Bienvenue dans notre cafeteria</p>
+        <h1>Notre cafétéria</h1>
+        <h4>Bienvenue pour déguster des crêpes, des gaufres et bien plus encore, toutes imprégnées de leurs saveurs vibrantes.</h4>
+        <p>C'est ici que l'on retrouve les origines de la cuisine sucrée-salée et de l'art de vivre.</p>
         </div>
       </header>
     </div>
