@@ -147,30 +147,30 @@
         box-shadow: 1px 1px 5px 4px rgba(250, 6, 201, 0.495);
       }
       main article:nth-of-type(1) div:nth-of-type(1) {
-       width: 40%;
-       display: flex;
-       flex-direction: row;
-       align-items: center;
-        }
-        main article:nth-of-type(1) div:nth-of-type(1) img {
-            width: 50%;
-            height: 280px;
-            display: flex;
-        }
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      main article:nth-of-type(1) div:nth-of-type(1) img {
+        width: 50%;
+        height: 280px;
+        display: flex;
+      }
 
-      main article:nth-of-type(1) div:nth-of-type(1)  >div  img:first-of-type{
+      main article:nth-of-type(1) div:nth-of-type(1) > div img:first-of-type {
         width: 100%;
         height: 160px;
         position: relative;
-        right:40px ;
+        right: 40px;
         top: 20px;
       }
-      main article:nth-of-type(1) div:nth-of-type(1)  >div {
+      main article:nth-of-type(1) div:nth-of-type(1) > div {
         display: flex;
         flex-direction: column;
         width: 50%;
       }
-      main article:nth-of-type(1) div:nth-of-type(1)  > div  img:last-of-type{
+      main article:nth-of-type(1) div:nth-of-type(1) > div img:last-of-type {
         width: 100%;
         height: 100px;
         position: relative;
@@ -182,11 +182,9 @@
         height: 100px;
         height: 300px;
       }
-    
-     
-     
+
       main article:nth-of-type(2) {
-        padding:5px ;
+        padding: 5px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -204,42 +202,27 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-       
-        
-    }
-    main article:nth-of-type(2) div:nth-of-type(2) img {
+      }
+      main article:nth-of-type(2) div:nth-of-type(2) img {
         width: 100%;
         height: 100px;
-    
-    }
-      main article:nth-of-type(2) div:nth-of-type(2)  >div {
+      }
+      main article:nth-of-type(2) div:nth-of-type(2) > div {
         display: flex;
         flex-direction: column;
         align-items: end;
-        justify-content:space-around ;
+        justify-content: space-around;
         width: 100%;
-        
       }
-      main article:nth-of-type(2) div:nth-of-type(2)  > div  img:first-of-type{
+      main article:nth-of-type(2) div:nth-of-type(2) > div img:first-of-type {
         width: 50%;
-    
       }
-      main article:nth-of-type(2) div:nth-of-type(2)  > div  img:last-of-type{
+      main article:nth-of-type(2) div:nth-of-type(2) > div img:last-of-type {
         width: 80%;
-
       }
-
-
-
-
-
-
-
-
-
-
 
       main article:nth-of-type(3) {
+        padding: 5px;
         display: flex;
         flex-direction: row;
         width: 95%;
@@ -249,26 +232,39 @@
       main article:nth-of-type(3) div:nth-of-type(1) {
         width: 40%;
         height: 200px;
+        display: flex;
+        flex-direction: column;
       }
-      
+      main article:nth-of-type(3) div:nth-of-type(1) + img {
+        width: 70%;
+        position: relative;
+        bottom: 15px;
+        z-index: 900;
+        left: 10px;
+      }
+      main article:nth-of-type(3) div:nth-of-type(1) > div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      main article:nth-of-type(3) div:nth-of-type(1) > div img:first-of-type {
+        width: 70%;
+        position: relative;
+        top: 30px;
+        left: 10px;
+      }
+      main article:nth-of-type(3) div:nth-of-type(1) > div img:last-of-type {
+        width: 70%;
+        position: relative;
+        left: 100px;
+      }
       main article:nth-of-type(3) div:nth-of-type(2) {
         width: 60%;
-        height: 100px;
-        background-color: red;
+        height: 300px;
       }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
       main article:nth-of-type(4) {
+        padding: 5px;
         display: flex;
         flex-direction: row;
         box-shadow: 1px 1px 5px 4px rgba(102, 51, 153, 0.53);
@@ -276,36 +272,92 @@
         height: 300px;
       }
       main article:nth-of-type(4) div:nth-of-type(1) {
-        width: 40%;
-        height: 100px;
+        width: 60%;
+        height: 300px;
       }
       main article:nth-of-type(4) div:nth-of-type(2) {
-        width: 60%;
-        height: 100px;
-        background-color: red;
+        width: 40%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
       }
+      main article:nth-of-type(4) div:nth-of-type(2) > img {
+        width: 50%;
+        height: 100px;
+        display: flex;
+        position: relative;
+        top: 10px;
+      }
+      main article:nth-of-type(4) div:nth-of-type(2) > div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+      }
+      main article:nth-of-type(4) div:nth-of-type(2) > div img:first-of-type {
+        height: 100px;
+        width: 50%;
+        position: relative;
+        left: 80px;
+      }
+      main article:nth-of-type(4) div:nth-of-type(2) > div img:last-of-type {
+        width: 50%;
+        height: 100px;
+        position: relative;
+        left: 130px;
+        bottom: 10px;
+      }
+
       main article:nth-of-type(5) {
+        padding: 5px;
         display: flex;
         flex-direction: row;
         box-shadow: 1px 1px 5px 4px rgba(0, 255, 255, 0.502);
         width: 95%;
         height: 300px;
       }
-      main article:nth-of-type(5) div:nth-last-of-type(1) {
-        width: 40%;
-        height: 100px;
+      main article:nth-of-type(5) div:nth-of-type(2) {
+        width: 100%;
+        height: 300px;
       }
 
-      main article:nth-of-type(5) div:nth-last-of-type(2) {
-        width: 60%;
+      main article:nth-of-type(5) div:nth-of-type(1) {
+        width: 40%;
         height: 300px;
-        background-color: red;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
       }
+
+      main article:nth-of-type(5) div:nth-of-type(1) + img {
+        width: 50%;
+        height: 200px;
+      }
+      main article:nth-of-type(5) div:nth-of-type(1) > div {
+        display: flex;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+      main article:nth-of-type(5) div:nth-of-type(1) > div img:first-of-type {
+        width: 100%;
+        height: 120px;
+        position: relative;
+        left: 10px;
+      }
+
+      main article:nth-of-type(5) div:nth-of-type(1) > div img:last-of-type {
+        width: 100%;
+        height: 150px;
+        position: relative;
+        top: 10px;
+        left: 10px;
+      }
+
       article {
         border-radius: 10px;
-      }
-      main img {
-        width: 100px;
       }
     </style>
   </head>
@@ -368,59 +420,90 @@
       <aside class="aside-left">
         <h3>Horaires</h3>
       </aside>
-     
-     
+
       <main>
-        
-        
         <article>
           <div>
             <img
-            src="les_images/backgroundheader6.jpg"
-            alt="image non atrouvable!"/>
-              <div>
-                  <img
-                    src="les_images/backgroundheader6.jpg"
-                    alt="image non atrouvable!"/>
-                   <img src="les_images/backgroundheader6.jpg"alt="image non atrouvable!" />
-                </div>
-             
+              src="les_images/backgroundheader6.jpg"
+              alt="image non atrouvable!"
+            />
+            <div>
+              <img
+                src="les_images/backgroundheader6.jpg"
+                alt="image non atrouvable!"
+              />
+              <img
+                src="les_images/backgroundheader6.jpg"
+                alt="image non atrouvable!"
+              />
+            </div>
           </div>
           <div></div>
         </article>
-        
-        
-        
-        
+
         <article>
-            <div></div>
+          <div></div>
           <div>
             <div>
               <img
-              src="les_images/backgroundheader6.jpg"
-              alt="image non atrouvable!"
+                src="les_images/backgroundheader6.jpg"
+                alt="image non atrouvable!"
               />
               <img
+                src="les_images/backgroundheader6.jpg"
+                alt="image non atrouvable!"
+              />
+            </div>
+            <img
               src="les_images/backgroundheader6.jpg"
               alt="image non atrouvable!"
-               />
+            />
+          </div>
+        </article>
+
+        <article>
+          <div>
+            <div>
+              <img
+                src="les_images/backgroundheader6.jpg"
+                alt="image non atrouvable!"
+              />
+              <img
+                src="les_images/backgroundheader6.jpg"
+                alt="image non atrouvable!"
+              />
             </div>
+            <img
+              src="les_images/backgroundheader6.jpg"
+              alt="image non atrouvable!"
+            />
+          </div>
+          <div></div>
+        </article>
+
+        <article>
+          <div></div>
+          <div>
+            <img
+              src="les_images/backgroundheader6.jpg"
+              alt="image non atrouvable!"
+            />
+            <div>
               <img
                 src="les_images/backgroundheader6.jpg"
                 alt="image non atrouvable!"
               />
 
-              
-          
-          </div>    
+              <img
+                src="les_images/backgroundheader6.jpg"
+                alt="image non atrouvable!"
+              />
+            </div>
+          </div>
         </article>
-        
-        
-        
-        
-        
+
         <article>
-          <div></div>
           <div>
             <div>
               <img
@@ -436,61 +519,12 @@
               src="les_images/backgroundheader6.jpg"
               alt="image non atrouvable!"
             />
-          
           </div>
-        </article>
-       
-       
-       
-       
-       
-        <article>
-          <div>
-            <img
-              src="les_images/backgroundheader6.jpg"
-              alt="image non atrouvable!"
-            />
-            <img
-              src="les_images/backgroundheader6.jpg"
-              alt="image non atrouvable!"
-            />
-            <div>
-              <img
-                src="les_images/backgroundheader6.jpg"
-                alt="image non atrouvable!"
-              />
-              <img
-                src="les_images/backgroundheader6.jpg"
-                alt="image non atrouvable!"
-              />
-            </div>
-          </div>
+
           <div></div>
-        </article>
-        <article>
-          <div></div>
-          <div>
-            <div>
-              <img
-                src="les_images/backgroundheader6.jpg"
-                alt="image non atrouvable!"
-              />
-              <img
-                src="les_images/backgroundheader6.jpg"
-                alt="image non atrouvable!"
-              />
-            </div>
-            <img
-              src="les_images/backgroundheader6.jpg"
-              alt="image non atrouvable!"
-            />
-            <img
-              src="les_images/backgroundheader6.jpg"
-              alt="image non atrouvable!"
-            />
-          </div>
         </article>
       </main>
+
       <aside class="aside-right"></aside>
     </div>
   </body>
