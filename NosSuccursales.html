@@ -800,7 +800,7 @@
         height: 450px;
         position: relative;
         right: 30px;
-        animation-name: rien;
+        animation-name: rien1;
         animation-duration: 4s;
         animation-iteration-count: infinite;
       }
@@ -823,16 +823,27 @@
         left: 100px;
       }
       @keyframes rien {
-  0% {
-    transform: translateY(3px);
-  }
-  50% {
-    transform: translateY(100px);
-  }
-  100% {
-    transform: translateY(3px);
-  }
-}
+        0% {
+          transform: translateY(3px);
+        }
+        50% {
+          transform: translateY(80px);
+        }
+        100% {
+          transform: translateY(3px);
+        }
+      }
+      @keyframes rien1 {
+        0% {
+          transform: translateY(3px);
+        }
+        50% {
+          transform: translateY(-90px);
+        }
+        100% {
+          transform: translateY(3px);
+        }
+      }
     </style>
   </head>
   <body>
