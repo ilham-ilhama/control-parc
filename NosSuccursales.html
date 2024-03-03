@@ -3,13 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-c/ekYH3qw8egTsv5+bP+6ZnYl3KJH3krwo+ckXmWhI2lfVGPD5GkVDxXGRlRhB8uNZdwk/qdS6yZkniu9ivx5A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <title>Nos Succursales</title>
     <style>
       body {
@@ -130,14 +126,6 @@
       .container {
         display: flex;
       }
-      aside {
-        width: 20%;
-        height: 1700px;
-        background-color: rgba(0, 255, 255, 0.132);
-        padding: 5px;
-        margin-top: 5px;
-        border-radius: 20px;
-      }
       main {
         width: 60%;
         height: 1750px;
@@ -151,7 +139,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        width: 95%;
+        width: 80%;
         height: 300px;
         box-shadow: 1px 1px 5px 4px rgba(250, 6, 201, 0.495);
       }
@@ -187,23 +175,46 @@
         left: 10px;
       }
       main article:nth-of-type(1) div:nth-of-type(2) {
+       display: flex;
+        flex-direction: column;
         width: 60%;
-        height: 100px;
         height: 300px;
+        position: relative;
+        left: 50px;
+        gap: 5px;
+        top: 50px;
       }
-
+      main article:nth-of-type(1) div:nth-of-type(2) h3 {
+        color: #e94cdb;
+      }
+      main article:nth-of-type(1) div:nth-of-type(2) i{
+        color: #e94cdb;
+      }
+    
       main article:nth-of-type(2) {
         padding: 5px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        width: 95%;
+        width: 80%;
         box-shadow: 1px 1px 5px 4px rgba(255, 255, 0, 0.418);
         height: 300px;
       }
       main article:nth-of-type(2) div:nth-of-type(1) {
         width: 60%;
         height: 300px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 50px;
+        left: 50px;
+       
+      }
+      main article:nth-of-type(2) div:nth-of-type(1) h3 {
+        color: rgb(225, 225, 55);
+      }
+      main article:nth-of-type(2) div:nth-of-type(1) i{
+        color: rgb(225, 225, 55);
       }
       main article:nth-of-type(2) div:nth-of-type(2) {
         width: 40%;
@@ -215,6 +226,7 @@
       main article:nth-of-type(2) div:nth-of-type(2) img {
         width: 100%;
         height: 100px;
+      
       }
       main article:nth-of-type(2) div:nth-of-type(2) > div {
         display: flex;
@@ -225,16 +237,22 @@
       }
       main article:nth-of-type(2) div:nth-of-type(2) > div img:first-of-type {
         width: 50%;
+        position: relative;
+        right: 50px;
+        bottom: 50px;
       }
       main article:nth-of-type(2) div:nth-of-type(2) > div img:last-of-type {
         width: 80%;
+        position: relative;
+        right: 50px;
+        bottom: 50px;
       }
 
       main article:nth-of-type(3) {
         padding: 5px;
         display: flex;
         flex-direction: row;
-        width: 95%;
+        width: 80%;
         height: 300px;
         box-shadow: 1px 1px 5px 4px rgba(65, 105, 225, 0.548);
       }
@@ -270,19 +288,41 @@
       main article:nth-of-type(3) div:nth-of-type(2) {
         width: 60%;
         height: 300px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 50px;
+        top: 50px;
       }
+      main article:nth-of-type(3) div:nth-of-type(2) h3 {
+        color:rgba(65, 105, 225, 0.797) ;
+      }
+      main article:nth-of-type(3) div:nth-of-type(2) i {
+        color: rgba(65, 105, 225, 0.797);
+    }
 
       main article:nth-of-type(4) {
         padding: 5px;
         display: flex;
         flex-direction: row;
         box-shadow: 1px 1px 5px 4px rgba(102, 51, 153, 0.53);
-        width: 95%;
+        width: 80%;
         height: 300px;
       }
       main article:nth-of-type(4) div:nth-of-type(1) {
         width: 60%;
         height: 300px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 50px;
+        left: 50px;
+      }
+      main article:nth-of-type(4) div:nth-of-type(1) h3{
+        color:rgba(102, 51, 153, 0.674) ;
+      }
+      main article:nth-of-type(4) div:nth-of-type(1) i{
+       color:rgba(102, 51, 153, 0.674) ;
       }
       main article:nth-of-type(4) div:nth-of-type(2) {
         width: 40%;
@@ -296,6 +336,7 @@
         display: flex;
         position: relative;
         top: 10px;
+        
       }
       main article:nth-of-type(4) div:nth-of-type(2) > div {
         display: flex;
@@ -307,14 +348,16 @@
         height: 100px;
         width: 50%;
         position: relative;
-        left: 80px;
+        left: 30px;
+        bottom: 60px;
+        z-index: 900;
       }
       main article:nth-of-type(4) div:nth-of-type(2) > div img:last-of-type {
         width: 50%;
         height: 100px;
         position: relative;
-        left: 130px;
-        bottom: 10px;
+        left: 70px;
+        bottom: 70px;
       }
 
       main article:nth-of-type(5) {
@@ -322,13 +365,24 @@
         display: flex;
         flex-direction: row;
         box-shadow: 1px 1px 5px 4px rgba(172, 255, 47, 0.539);
-        width: 95%;
+        width: 80%;
         height: 300px;
       }
       main article:nth-of-type(5) div:nth-of-type(2) {
         width: 100%;
         height: 300px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 50px;
+        left: 50px;
       }
+      main article:nth-of-type(5) div:nth-of-type(2) h3 {
+      color:rgba(151, 231, 31, 0.765) ;
+      }
+      main article:nth-of-type(5) div:nth-of-type(2) i{
+      color:rgba(151, 231, 31, 0.765) ;
+    }
 
       main article:nth-of-type(5) div:nth-of-type(1) {
         width: 40%;
@@ -530,6 +584,93 @@
         padding: 5px;
         border-radius: 5px;
       }
+      main a{
+        text-decoration: none;
+        position: relative;
+        bottom: 15px;
+        left: 40px;
+        color:rgb(141, 132, 132);
+       }
+       main a:hover{
+        color: rgba(18, 169, 169, 0.683);
+       }
+       
+       
+
+       .aside-left{
+        width: 20%;
+        height: 1750px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .aside-left div:nth-of-type(1){
+        background-color: rgba(0, 255, 255, 0.091);
+        width: 100%;
+        height: 300px;
+        border-radius:20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .aside-left div:nth-of-type(1) h3{
+       margin: 0;
+       color: #e944dc;
+      padding-top: 10px;
+      }
+
+      .aside-left div:nth-of-type(1) table{
+        width: 90%;
+        height: 230px;
+        border: #e944dc solid 1px;
+       color:rgba(125, 117, 117, 0.689) ;
+        border-radius:5px ;
+        margin-bottom: 15px;
+      }
+      .aside-left div:nth-of-type(1) table  th,td{
+      border-radius: 2px;
+
+      }
+      
+      .aside-left div:nth-of-type(2){
+        background-color: rgba(220, 220, 220, 0.689);
+        width: 90%;
+        height: 300px;
+        border-radius:20px;
+        display: flex;
+        flex-direction: column;
+      }
+      .aside-left div:nth-of-type(3){
+        background-color: rgba(0, 255, 255, 0.091);
+        width: 90%;
+        height: 300px;
+        border-radius:20px;
+      }
+      .aside-left div:nth-of-type(4){
+        background-color: rgba(220, 220, 220, 0.689);
+        width: 90%;
+        height: 300px;
+        border-radius:20px;
+      }
+      .aside-left div:nth-of-type(5){
+        background-color: rgba(0, 255, 255, 0.091);
+        width: 90%;
+        height: 300px;
+        border-radius:20px;
+      }
+      
+      
+      
+      
+      
+      
+      .aside-right{
+        width: 20%;
+        height: 1700px;
+        background-color: rgba(0, 255, 255, 0.132);
+       }
      
     </style>
   </head>
@@ -590,7 +731,64 @@
     </header>
     <div class="container">
       <aside class="aside-left">
-        <h3>Horaires</h3>
+        <div>
+        <h3>Horaires </h3>
+        <table border="1">
+          <tr><th>lundi </th><td>14h-21h</td></tr>
+          <tr><th>Mardi au Jeudi </th><td>12h-21h</td></tr>
+          <tr><th>Vendredi </th><td>12h-22h</td></tr>
+          <tr><th>Samedi </th><td>10h-22h</td></tr>
+          <tr><th>Dimenche</th><td>10h-21h</td></tr>
+        </table>
+      </div>
+      
+
+      <div>
+        <h3>Horaires tachfin</h3>
+        <table border="1">
+        <tr><th>Dimanche </th><td>10h-22h</td></tr>
+        <tr><th>Lundi </th><td>14h-21h</td></tr>
+        <tr><th>Mardi au Jeudi </th><td>12h-21h</td></tr>
+          <tr><th>Vendredi </th><td>12h-22h</td></tr>
+          <tr><th>Samedi </th><td>10h-22h</td></tr>
+        </table>
+      </div>
+      
+      <div>
+        <h3>Horaires maarif</h3>
+        <table border="1">
+        <tr><th>Dimanche </th><td>11h-20h</td></tr>
+        <tr><th>Lundi & Mardi </th><td>11h-20h</td></tr>
+        <tr><th>Mercredi </th><td>12h-20h</td></tr>
+        <tr><th>Jeudi au Samedi</th><td>11h-20h</td></tr> 
+        </table>
+      </div>
+      
+
+      <div>
+        <h3>Horaires californi</h3>
+        <table border="1">
+        <tr><th>Lundi au jeudi </th><td>14h-22h</td></tr>
+        <tr><th>Mercredi </th><td>12h-22h</td></tr>
+        <tr><th>Jeudi </th><td>14h-22h</td></tr>
+        <tr><th>Vendredi </th><td>12h-22h</td></tr>
+        <tr><th>Samedi & Dimenche </th><td>10h-22h</td></tr> 
+        </table>
+      </div>
+
+
+      <div>
+        <h3>Horaires sidi maarouf</h3>
+        <table border="1">
+        <tr><th>Dimenche </th><td>11h-22h</td></tr>
+        <tr><th>Lundi </th><td>14h-21h</td></tr>
+        <tr><th>Mardi au Jeudi </th><td>12h-21h</td></tr>
+        <tr><th>Vendredi </th><td>12h-22h</td></tr>
+        <tr><th>Samedi  </th><td>11h-22h</td></tr> 
+        </table>
+      </div>
+      
+      
       </aside>
 
       <main>
@@ -613,14 +811,29 @@
           </div>
           <div>
             <h3>Bouskoura</h3>
-            
+                
+                  <i class="material-icons">phone</i>
+                  <a href="tel:06 44 85 79 27" target="_blank">06 44 85 79 27</a>
+                    <i class="material-icons">email</i>
+                    <a href="mailto:ilhambaddioui2022@gmail.com" target="_blank">yasminefunparkBouskoura@gmail.com</a>
+                      <i class="material-icons">location_on</i>
+                      <a href="https://www.google.com/maps/place/Les+Myriades+Bouskoura/@33.4393287,-7.6312942,15z/data=!4m6!3m5!1s0xda62fc621f189a5:0xaf96cdd4fe95e072!8m2!3d33.4393287!4d-7.6312942!16s%2Fg%2F11j1jr29c7?entry=ttu" target="_blank">les myriades bouskoura</a>
+
           </div>
         </article>
 
+        
+        
         <article>
           <div>
             <h3>Tachefine</h3>
-            
+            <i class="material-icons">phone</i>
+            <a href="tel:05 22 62 03 62" target="_blank">05 22 62 03 62</a>
+            <i class="material-icons">email</i>
+            <a href="mailto:ilhambaddioui2022@gmail.com" target="_blank">yasminefunparkTachefine@gmail.com</a>
+            <i class="material-icons">location_on</i>
+            <a href="https://www.google.com/maps/place/Yasmine+Fun+Park+Tachfine/@33.586159,-7.5927788,15z/data=!4m6!3m5!1s0xda7cd41d9424eab:0x9c7c43057d46f762!8m2!3d33.586159!4d-7.5927788!16s%2Fg%2F11f9jf8y68?entry=ttu" target="_blank">Tachfine Center</a>
+
           </div>
           <div>
             <div>
@@ -659,14 +872,26 @@
           </div>
           <div>
             <h3>Maarif</h3>
-            
+            <i class="material-icons">phone</i>
+            <a href="tel:05 20 30 92 42" target="_blank">05 20 30 92 42</a>
+            <i class="material-icons">email</i>
+            <a href="mailto:ilhambaddioui2022@gmail.com" target="_blank">yasminefunparkMaarif@gmail.com</a>
+            <i class="material-icons">location_on</i>
+            <a href="Résidence Yasmine Signature Maârif Rue El Fourat, Casablanca 20330" target="_blank">Résidence Yasmine</a>
+
           </div>
         </article>
 
         <article>
           <div>
             <h3>Californie</h3>
-           
+            <i class="material-icons">phone</i>
+            <a href="tel:06 63 78 53 95" target="_blank">06 63 78 53 95</a>
+            <i class="material-icons">email</i>
+            <a href="mailto:ilhambaddioui2022@gmail.com" target="_blank">yasminefunparkCalifornie@gmail.com</a>
+            <i class="material-icons">location_on</i>
+            <a href="centre commercial marjane californie, B2, Casablanca" target="_blank">Marjane Californie</a>
+
                
           </div>
           <div>
@@ -708,8 +933,13 @@
 
           <div>
             <h3>Sidi Maarouf</h3>
-            <div>
-               
+            <i class="material-icons">phone</i>
+            <a href="tel:06 61 23 91 26" target="_blank">06 61 23 91 26</a>
+            <i class="material-icons">email</i>
+            <a href="mailto:ilhambaddioui2022@gmail.com" target="_blank">yasminefunparkSidi-Maarouf@gmail.com</a>
+            <i class="material-icons">location_on</i>
+            <a href="Av. Abou Bakr el Kadiri, Casablanca 20280" target="_blank">Centre commercial Ovillage </a>
+          
           </div>
         </article>
       </main>
