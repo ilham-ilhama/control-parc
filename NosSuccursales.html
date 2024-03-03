@@ -683,7 +683,7 @@
         border: solid 1px  rgba(65, 105, 225, 0.797);
       }
       .aside-left div:nth-of-type(4){
-        background-color: rgba(220, 220, 220, 0.689);
+        background-color: rgba(220, 220, 220, 0.514);
         width: 100%;
         height: 300px;
         border-radius:20px;
@@ -736,10 +736,88 @@
    
       .aside-right{
         width: 20%;
-        height: 1700px;
-        background-color: rgba(0, 255, 255, 0.132);
+        height: 1750px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
        }
-     
+       .aside-right div:nth-of-type(1){
+        background-color: rgba(220, 220, 220, 0.404);
+        width: 100%;
+        height: 300px;
+        border-radius:20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0 0 5px 2px rgba(0, 255, 255, 0.08);
+       }
+       .aside-right div:nth-of-type(1) h3{
+        margin: 0;
+        padding-top: 10px;
+        color:rgba(81, 218, 218, 0.886)   ;
+       }
+       .aside-right div:nth-of-type(1) table{
+        width: 90%;
+        height: 230px;
+        border-radius:5px;
+        margin-bottom: 15px;
+        border: solid 1px wheat ;
+        color:rgba(81, 218, 218, 0.886) ;
+      }
+       .aside-right div:nth-of-type(2){
+        background-color: rgba(0, 255, 255, 0.091);
+        width: 100%;
+        height: 300px;
+        border-radius:20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow:  0 0 5px 2px rgba(50, 50, 50, 0.25);
+      }
+      .aside-right div:nth-of-type(2) h3{
+        margin: 0;
+        padding-top: 10px;
+        color:rgba(125, 117, 117, 0.689)  ;
+       }
+       .aside-right div:nth-of-type(2) table{
+        width: 90%;
+        height: 230px;
+        border-radius:5px;
+        margin-bottom: 15px;
+        border: solid 1px wheat ;
+        color:rgba(125, 117, 117, 0.689) ;
+      }
+      .aside-right div:nth-of-type(2) table th,td{
+       border-radius: 5px;
+      }
+      .aside-right div:nth-of-type(3){
+       width: 100%;
+       height: 450px;
+       border: solid 2px;
+      }
+      .aside-right div:nth-of-type(3) img:first-of-type{
+        position: relative;
+        width: 100%;
+      }
+      .aside-right div:nth-of-type(3) img:last-of-type{
+        position: relative;
+        left: 10px;
+        bottom: 5px;
+        width: 90%;
+      }
+      
+      
+      
+      .aside-right div:nth-of-type(4){
+       width: 90%;
+       height: 450px;
+       border: solid 2px;
+      }
+
+    
     </style>
   </head>
   <body>
@@ -1012,7 +1090,49 @@
         </article>
       </main>
 
-      <aside class="aside-right"></aside>
+      <aside class="aside-right">
+        <div>
+          <h3>Horaires Ramadan</h3>
+          <table border="1">
+          <tr><th rowspan=2>Lundi au Vendredi </th> <td colspan=2>12h-17h30</td></tr>
+          <tr><td colspan=2>21h-00h</td></tr>
+          
+            <tr><th  rowspan=2>Samedi & Dimanche </th><td>11h-17h30</td></tr> 
+          <tr><td colspan=2>21h-00h</td></tr>
+          </table>
+        </div>
+
+        <div>
+          <h3>Horaires Vacances & Fetes</h3>
+          <table border="1">
+          <tr><th colspan=2 >Tous Les Joures</th><td>10h-22h</td></tr>
+          
+          <tr><th colspan=2 > Dimanche </th><td>10h-21h</td></tr> 
+          </table>
+        </div>
+        <div>
+          <img src="les_images/nos_succurssal/main/head2.png">
+          <img src="les_images/nos_succurssal/main/body2.png">
+        </div>
+        <div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </aside>
     </div>
 
     <div class="border_1">
