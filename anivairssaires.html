@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anivairssaires</title>
     <style>
-        body{
-            margin: 0;
-            padding: 0;
-        }
-        .nav{
-            height: 200px;
-        }
-        .ballon{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
-         body .img1{
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .nav {
+        height: 200px;
+      }
+      .ballon {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      body .img1 {
         width: 25%;
         position: fixed;
         left: 0;
@@ -25,46 +25,53 @@
         animation-name: ballons;
         animation-duration: 6s;
         z-index: 900;
-        }
-        
-        body .img2{
+      }
+
+      body .img2 {
         width: 25%;
-        position:fixed;
+        position: fixed;
         left: 320px;
         bottom: -490px;
         animation-name: ballons2;
         animation-duration: 6s;
         z-index: 900;
-        }
-        body .img4{
+      }
+      body .img4 {
         width: 25%;
-        position:fixed;
+        position: fixed;
         right: 320px;
         bottom: -490px;
         animation-name: ballons;
         animation-duration: 6s;
         z-index: 900;
-        }    
-        body .img3{
+      }
+      body .img3 {
         width: 25%;
-        position:fixed;
+        position: fixed;
         right: 0;
         animation-name: ballons2;
         top: -490px;
         animation-duration: 6s;
         z-index: 900;
-        }
-       
-        @keyframes ballons{
-        0% { bottom: -1vh;}
-        100% {bottom: 100vh;}
       }
-      @keyframes ballons2{
-        0% { top: -1vh;}
-        100% {top: 100vh;}
+
+      @keyframes ballons {
+        0% {
+          bottom: -1vh;
+        }
+        100% {
+          bottom: 100vh;
+        }
+      }
+      @keyframes ballons2 {
+        0% {
+          top: -1vh;
+        }
+        100% {
+          top: 100vh;
+        }
       }
       footer {
-      
         width: 100%;
         font-family: arial;
         display: flex;
@@ -221,126 +228,198 @@
           rgba(86, 248, 15, 0.978203781512605) 98%
         );
         padding: 5px;
-        border-radius: 5px; 
+        border-radius: 5px;
       }
-      header{
-        height: 300px;
+      @font-face {
+        font-family: aniv;
+        src: url(PartyDayDemoRegular.ttf);
       }
-      main{
+      header >h1 {
+        font-family: aniv;
+        left: 100px;
+        position: relative;
+        width: 0;
+        bottom: 57px;
+        font-size: 50px;
+        color: #3bb8e9aa;
+        animation-name: anniv;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes anniv{
+  0%{left: 10px;}
+  50%{left:400px;}
+  100%{left:0;}
+}
+      header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 400px;
+      }
+      header .garcon {
+      gap: 30px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(117, 192, 219, 0.447);
+      }
+      @font-face {
+        font-family: anniv;
+        src: url(Angelia\ Beauty.ttf);
+      }
+      header .garcon h1{
+        font-family: anniv;
+        color: #e954da;
+        margin: 0;
+        top: 100px;
+        position: relative;
+        width: 600px;
+        left: 200px;
+      }
+      header .garcon h3:first-of-type{
+        font-family: anniv;
+        color: #d970e9;
+        top: 100px;
+        margin: 0;
+        position: relative;
+        left: 300px;
+        font-size: 30px;
+      }
+      header .garcon h3:last-of-type{
+        font-family: anniv;
+        color: #7abbff;
+        top: 100px;
+        margin: 0;
+        position: relative;
+        left: 400px;
+        font-size: 20px;
+    }
+    header .garcon img{
+        position: relative;
+        width: 35%;
+        left: 20px;
+    }
+      header .filles {
+        width: 60%;
+        background-image: url(les_images/anivairssaire/header/mains-allumant-bougies-gateau_23-2147666179.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 400px;
+      }
+      
+      main {
         height: 500px;
       }
-
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <input type="color" />
     <div class="ballon">
-    <img class="img1" src="les_images/anivairssaire/main/left.png">
-    <img class="img2" src="les_images/anivairssaire/main/left.png">
-    <img class="img3" src="les_images/anivairssaire/main/right.png">
-    <img class="img4" src="les_images/anivairssaire/main/right.png">
+      <img class="img1" src="les_images/anivairssaire/main/left.png" />
+      <img class="img2" src="les_images/anivairssaire/main/left.png" />
+      <img class="img3" src="les_images/anivairssaire/main/right.png" />
+      <img class="img4" src="les_images/anivairssaire/main/right.png" />
     </div>
     <div class="nav"></div>
-    
-    <header></header>
+
+    <header>
+      <h1>joyeuxanivairssaire</h1>
+      <div class="garcon"><h1>Fêtes d'Anniversaire Personnalisées pour Enfants</h1><h3>Choisissez Votre Thème Préféré</h3> <h3>Créez des Souvenirs Inoubliables</h3><img src="les_images/anivairssaire/header/cadeaux.png"></img>
+    </div>
+      <div class="filles"></div>
+    </header>
     <main></main>
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     <div class="border_1">
-        <div class="border_2">
-          <div class="border_3">
-            <footer>
-              <div class="tous">
-                <div class="paragraph-logo">
-                  <img
-                    class="logo"
-                    src="les_images/footer/logo-image-removebg-preview.png"
-                    alt="Image introuvable!"
-                  />
-                  <p>
-                    Première plateforme digitale multicanal, au casablanca,
-                    spécialisés dans les services de l'enfance. Grandir en
-                    s'amusant, dans notre univers joyeux est sécurisé
-                  </p>
-                </div>
-  
-                <div class="photos_contact">
-                  <h4 class="contact">CONTACT</h4>
-                  <div class="photos">
-                    <div>
-                      <img
-                        src="les_images/footer/phone.png"
-                        alt="Image introuvable!"
-                      />
-                      <a href="tel:0661239126" target="_blank">06 61 23 91 26</a>
-                    </div>
-                    <div>
-                      <img
-                        src="les_images/footer/mail.png"
-                        alt="Image introuvable!"
-                      />
-                      <a href="mailto:ilhambaddioui@gmail.com" target="_blank"
-                        >yasminefunpark@gmail.com</a
-                      >
-                    </div>
-                    <div>
-                      <img
-                        src="les_images/footer/localisation.png"
-                        alt="Image introuvable!"
-                      />
-                      <a
-                        href="https://www.google.com/maps/place/Casablanca/@33.5721783,-7.7518024,11z/data=!3m1!4b1!4m6!3m5!1s0xda7cd4778aa113b:0xb06c1d84f310fd3!8m2!3d33.5731104!4d-7.5898434!16zL20vMDIyYl8?entry=ttu"
-                        target="_blank"
-                        >Casablanca- Maroc</a
-                      >
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="span_categori">
-                  <h4>CATÉGORIES</h4>
-                  <div class="les_span">
-                    <a href="index.html"><span>Acceuil</span></a>
-                    <a href="#"><span>Parc</span></a>
-                    <a href="#"><span>Organisation</span></a>
-                    <a href="#"><span>Nos Succursales</span></a>
-                    <a href="reservation.html"><span>Reservation</span></a>
-                  </div>
-                </div>
-                <div class="liens_photos">
-                  <a href="tobogon.html"
-                    ><img
-                      src="les_images/footer/ballefooter.jpg"
-                      alt="Image introuvable!"
-                  /></a>
-                  <a href="ateliers.html"
-                    ><img
-                      src="les_images/footer/atelier1footer.jpg"
-                      alt="Image introuvable!"
-                  /></a>
+      <div class="border_2">
+        <div class="border_3">
+          <footer>
+            <div class="tous">
+              <div class="paragraph-logo">
+                <img
+                  class="logo"
+                  src="les_images/footer/logo-image-removebg-preview.png"
+                  alt="Image introuvable!"
+                />
+                <p>
+                  Première plateforme digitale multicanal, au casablanca,
+                  spécialisés dans les services de l'enfance. Grandir en
+                  s'amusant, dans notre univers joyeux est sécurisé
+                </p>
+              </div>
+
+              <div class="photos_contact">
+                <h4 class="contact">CONTACT</h4>
+                <div class="photos">
                   <div>
-                    <a href="jeux-vr.html"
-                      ><img
-                        src="les_images/footer/vrfooter.jpg"
-                        alt="Image introuvable!"
-                    /></a>
-                    <a href="anivairssaires.html"
-                      ><img
-                        src="les_images/footer/anivfooter 3.jpg"
-                        alt="Image introuvable!"
-                    /></a>
+                    <img
+                      src="les_images/footer/phone.png"
+                      alt="Image introuvable!"
+                    />
+                    <a href="tel:0661239126" target="_blank">06 61 23 91 26</a>
+                  </div>
+                  <div>
+                    <img
+                      src="les_images/footer/mail.png"
+                      alt="Image introuvable!"
+                    />
+                    <a href="mailto:ilhambaddioui@gmail.com" target="_blank"
+                      >yasminefunpark@gmail.com</a
+                    >
+                  </div>
+                  <div>
+                    <img
+                      src="les_images/footer/localisation.png"
+                      alt="Image introuvable!"
+                    />
+                    <a
+                      href="https://www.google.com/maps/place/Casablanca/@33.5721783,-7.7518024,11z/data=!3m1!4b1!4m6!3m5!1s0xda7cd4778aa113b:0xb06c1d84f310fd3!8m2!3d33.5731104!4d-7.5898434!16zL20vMDIyYl8?entry=ttu"
+                      target="_blank"
+                      >Casablanca- Maroc</a
+                    >
                   </div>
                 </div>
               </div>
-            </footer>
-          </div>
+
+              <div class="span_categori">
+                <h4>CATÉGORIES</h4>
+                <div class="les_span">
+                  <a href="index.html"><span>Acceuil</span></a>
+                  <a href="#"><span>Parc</span></a>
+                  <a href="#"><span>Organisation</span></a>
+                  <a href="#"><span>Nos Succursales</span></a>
+                  <a href="reservation.html"><span>Reservation</span></a>
+                </div>
+              </div>
+              <div class="liens_photos">
+                <a href="tobogon.html"
+                  ><img
+                    src="les_images/footer/ballefooter.jpg"
+                    alt="Image introuvable!"
+                /></a>
+                <a href="ateliers.html"
+                  ><img
+                    src="les_images/footer/atelier1footer.jpg"
+                    alt="Image introuvable!"
+                /></a>
+                <div>
+                  <a href="jeux-vr.html"
+                    ><img
+                      src="les_images/footer/vrfooter.jpg"
+                      alt="Image introuvable!"
+                  /></a>
+                  <a href="anivairssaires.html"
+                    ><img
+                      src="les_images/footer/anivfooter 3.jpg"
+                      alt="Image introuvable!"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
-</body>
+    </div>
+  </body>
 </html>
