@@ -245,6 +245,7 @@
         animation-name: anniv;
         animation-duration: 7s;
         animation-iteration-count: infinite;
+        z-index: 1;
       }
       @keyframes anniv{
   0%{left: 10px;}
@@ -273,33 +274,45 @@
         font-family: anniv;
         color: #e954da;
         margin: 0;
-        top: 100px;
+        top: 40px;
         position: relative;
         width: 600px;
         left: 200px;
+       
       }
       header .garcon h3:first-of-type{
         font-family: anniv;
         color: #d970e9;
-        top: 100px;
+        top: 40px;
         margin: 0;
         position: relative;
         left: 300px;
         font-size: 30px;
+       
       }
       header .garcon h3:last-of-type{
         font-family: anniv;
         color: #7abbff;
-        top: 100px;
+        top: 40px;
         margin: 0;
         position: relative;
         left: 400px;
         font-size: 20px;
+    
     }
-    header .garcon img{
+    header .garcon  .cadeaux{
         position: relative;
         width: 35%;
         left: 20px;
+        bottom: 80px;
+    }
+    header .garcon  .ballonhea{
+        position: relative;
+        top: 50px;
+        right: 30px;
+        rotate: -30deg;
+        width: 30%;
+        
     }
       header .filles {
         width: 60%;
@@ -325,7 +338,7 @@
 
     <header>
       <h1>joyeuxanivairssaire</h1>
-      <div class="garcon"><h1>Fêtes d'Anniversaire Personnalisées pour Enfants</h1><h3>Choisissez Votre Thème Préféré</h3> <h3>Créez des Souvenirs Inoubliables</h3><img src="les_images/anivairssaire/header/cadeaux.png"></img>
+      <div class="garcon"><img class="ballonhea" src="les_images/anivairssaire/header/ballonhead.png"><h1>Fêtes d'Anniversaire Personnalisées pour Enfants</h1><h3>Choisissez Votre Thème Préféré</h3> <h3>Créez des Souvenirs Inoubliables</h3><img class="cadeaux" src="les_images/anivairssaire/header/cadeaux.png"></img>
     </div>
       <div class="filles"></div>
     </header>
