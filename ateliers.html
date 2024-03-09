@@ -481,6 +481,17 @@
           rgb(242, 166, 224) 100%
         );
       }
+      article:hover{
+        animation-name: card;
+        animation-duration: 3s;
+        box-shadow: 40px 40px 40px 0.5px rgba(236, 174, 58, 0.676);
+  animation-iteration-count: infinite;
+      }
+      @keyframes card {
+        0%{ transform: translate(0px);}
+        50%{transform: translate(40px)}
+        100%{transform: translateY(30px)}
+      }
     </style>
   </head>
   <body>
