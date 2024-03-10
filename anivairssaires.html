@@ -323,9 +323,10 @@
         background-size: 100% 400px;
       }
       main {
-        height: 700px;
+        height: 1050px;
         display: flex;
         justify-content: center;
+        flex-direction: column;
       }
       section {
         height: 450px;
@@ -336,7 +337,6 @@
         position: relative;
         top: 50px;
         font-style: italic;
-        
       }
 
       section div:first-of-type {
@@ -358,18 +358,16 @@
         right: 30px;
         color: #e93bdd;
       }
-      section .ken{
+      section .ken {
         width: 150px;
         height: 200px;
         border: groove 5px white;
         z-index: 1;
-       
       }
 
       section div:last-of-type {
         display: flex;
         flex-direction: column;
-        
       }
       section div:last-of-type img {
         width: 300px;
@@ -377,7 +375,6 @@
         position: relative;
         top: 80px;
         right: 30px;
-       
       }
       section div:last-of-type p {
         width: 270px;
@@ -386,24 +383,124 @@
         right: 30px;
         color: #7dc9f8;
       }
-      .madlen1{
+      .madlen1 {
         position: relative;
         width: 230px;
         height: 130px;
         right: 60px;
         top: 20px;
-       filter: drop-shadow( 10px 13px 3px #f5a0ef );
+        filter: drop-shadow(10px 13px 3px #f5a0ef);
       }
-      .madlen2{
+      .madlen2 {
         position: relative;
         top: 300px;
         width: 250px;
         height: 140px;
         right: -22px;
-        filter: drop-shadow( 13px 13px 3px #7dc9f8);
+        filter: drop-shadow(13px 13px 3px #7dc9f8);
       }
-   
-   
+      main .tous {
+        display: flex;
+        flex-direction: row;
+        height: 600px;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+      }
+      article:first-of-type {
+        width: 47%;
+        height: 350px;
+        background-color: #e79df392;
+        border-radius: 30px;
+        box-shadow: 10px 10px 10px 3px #91c0f3a7;
+        display: flex;
+       
+      }
+      article:first-of-type div:first-of-type{
+        width: 50%;
+      }
+      article:first-of-type div:first-of-type h3{
+        
+    }
+    article:first-of-type div:first-of-type p{
+        
+    }
+      article:last-of-type {
+        width: 47%;
+        height: 350px;
+        background-color: #91c0f387;
+        border-radius: 30px;
+        box-shadow: 10px 10px 10px 3px #e79df392;
+        display: flex;    
+      }
+      article:last-of-type div:first-of-type{
+        width: 50%;
+      }
+      article:last-of-type div:first-of-type h3{
+        
+    }
+    article:last-of-type div:first-of-type p{
+        
+    }
+
+      article img{
+        width: 49%;
+      }
+    
+ 
+      .images{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+       justify-content: center;
+
+      }
+      article img:nth-of-type(1){
+        position: relative;
+        rotate: -20deg;  
+        left: 40px; 
+      }
+      article img:nth-of-type(1):hover{
+        rotate:0deg;  
+         height: 100px; 
+         width: 100%;
+        left:0px;
+      }
+      article img:nth-of-type(2){  
+        rotate: 20deg;
+        position: relative;
+        right: 60px;
+    }
+    article img:nth-of-type(2):hover{  
+        rotate: 0deg;
+        width: 100%;
+        height: 100px;
+        right: 0px;
+    }
+    article img:nth-of-type(3){
+        position: relative;
+        left: 40px;
+        rotate: -20deg;
+    }
+    article img:nth-of-type(3):hover{
+        left: 0px;
+        rotate: 0deg;
+        width: 100%;
+        height: 100px;
+    }
+    article img:nth-of-type(4){
+        position: relative;
+        rotate: 20deg; 
+        right: 40px;  
+    }
+    article img:nth-of-type(4):hover{
+        width: 100%;
+        rotate: 0deg; 
+        right: 0px;
+        height: 100px;  
+    }
+
     </style>
   </head>
   <body>
@@ -416,7 +513,7 @@
     <div class="nav"></div>
 
     <header>
-      <h1>joyeuxanivairssaire</h1>
+      <h1>JoyeuxAnniversaire</h1>
       <div class="garcon">
         <img
           class="ballonhea"
@@ -434,9 +531,10 @@
     </header>
     <main>
       <section>
-     
-        
-        <img class="madlen1" src="les_images/anivairssaire/main/section/madlen2.png">
+        <img
+          class="madlen1"
+          src="les_images/anivairssaire/main/section/madlen2.png"
+        />
         <div>
           <p>
             Dans nos fêtes d'anniversaire pour enfants, chaque détail est
@@ -447,7 +545,10 @@
           </p>
           <img src="les_images/anivairssaire/main/section/aniv2.jpg" />
         </div>
-        <img class="ken" src="les_images/anivairssaire/main/section/aniv1.jpg" />
+        <img
+          class="ken"
+          src="les_images/anivairssaire/main/section/aniv1.jpg"
+        />
         <div>
           <img src="les_images/anivairssaire/main/section/aniv3.jpg" />
           <p>
@@ -458,8 +559,37 @@
             célébration spéciale où le plaisir et la magie sont au rendez-vous.
           </p>
         </div>
-        <img class="madlen2" src="les_images/anivairssaire/main/section/madlen1.png">
+        <img
+          class="madlen2"
+          src="les_images/anivairssaire/main/section/madlen1.png"
+        />
       </section>
+      <div class="tous">
+        <article>
+          <div>
+            <h3></h3>
+            <p></p>
+          </div>
+          <div class="images">
+            <img src="les_images/backgroundheader6.jpg" />
+            <img src="les_images/backgroundheader6.jpg" />
+            <img src="les_images/backgroundheader6.jpg" />
+            <img src="les_images/backgroundheader6.jpg" />
+          </div>
+        </article>
+        <article>
+          <div>
+            <h3></h3>
+            <p></p>
+          </div>
+          <div class="images">
+            <img src="les_images/backgroundheader6.jpg" />
+            <img src="les_images/backgroundheader6.jpg" />
+            <img src="les_images/backgroundheader6.jpg" />
+            <img src="les_images/backgroundheader6.jpg" />
+          </div>
+        </article>
+      </div>
     </main>
 
     <div class="border_1">
