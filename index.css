@@ -463,12 +463,11 @@ article {
  article div:nth-of-type(1) .front-side{
   background-image: url(les_images/backgroundheader6.jpg);
   background-size: 100% 100%;
-  background-color: #00dbde;
+
 }
 article div:nth-of-type(2) .front-side {
   background-image: url(les_images/main/article/atelier1.jpg);
   background-size: 100% 100%;
-  background-color: #b790fe;
 }
 article div:nth-of-type(3) .front-side{
   background-image: url(les_images/main/article/tobogon3.jpg);
@@ -482,7 +481,23 @@ article div:nth-of-type(3) .front-side{
   flex-direction: column;
   justify-content: center;
   gap: 5rem;
- 
+ font-family: salsa;
+}
+.back-side h1{
+  margin: 0;
+  color: rgb(247, 97, 162);
+  width: 80%;
+  text-align: center;
+  position: relative;
+  top: 15px;
+}
+.back-side p{
+  margin: 0;
+  position: relative;
+  text-align: center;
+  bottom: 40px;
+  font-size: 15px;
+  width: 80%;
 }
 .container:hover > .card {
   cursor: pointer;
