@@ -9,8 +9,109 @@
         margin: 0;
         padding: 0;
       }
-      .nav {
-        height: 200px;
+      @font-face {
+        font-family: salsa;
+        src: url(Salsa-Regular.ttf);
+      }
+      @keyframes rien {
+        0% {
+          transform: translateY(2px);
+        }
+        50% {
+          transform: translateY(20px);
+        }
+        100% {
+          transform: translateY(2px);
+        }
+      }
+      .header1 {
+        height: 130px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .yassmine {
+        height: 100%;
+        margin-left: 20px;
+        animation-name: rien;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+      }
+      .logo img {
+        height: 40px;
+      }
+      .logo {
+        display: flex;
+        margin-top: 28px;
+        margin-right: 20px;
+        gap: 15px;
+        height: 40px;
+      }
+      .logo a {
+        border-radius: 50%;
+      }
+      .logo a:nth-of-type(1):focus {
+        box-shadow: 1px 1px 5px 7px rgb(24, 119, 242);
+      }
+      .logo a:nth-of-type(2):focus {
+        box-shadow: 1px 1px 5px 7px rgb(251, 50, 130);
+      }
+      .logo a:nth-of-type(3):focus {
+        box-shadow: 1px 1px 5px 7px rgb(12, 12, 12);
+      }
+      .logo a:nth-of-type(4):focus {
+        box-shadow: 1px 1px 5px 7px rgb(255, 0, 0);
+      }
+      nav {
+        position: -webkit-sticky;
+        position: sticky;
+        height: 50px;
+        top: 5px;
+        z-index: 900;
+        background-color: rgba(255, 255, 255, 0.171);
+      }
+      nav .liens {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      nav .liens a {
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: 900;
+        font-family: salsa;
+        padding-bottom: 2px;
+      }
+      nav .liens li:nth-child(1) a {
+        color: red;
+      }
+
+      nav .liens li:nth-child(2) a {
+        color: rgb(157, 28, 177);
+      }
+      nav .liens li:nth-child(2) ul li a {
+        color: rgb(157, 28, 177);
+      }
+      nav .liens li:nth-child(3) a {
+        color: rgb(247, 97, 162);
+      }
+      nav .liens li:nth-child(4) a {
+        color: rgb(252, 200, 50);
+      }
+      nav .liens li:nth-child(5) a {
+        color: rgb(56, 72, 145);
+      }
+
+      nav .options {
+        display: none;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .item:hover .options {
+        display: block;
       }
       .ballon {
         width: 100%;
@@ -24,7 +125,7 @@
         bottom: -490px;
         animation-name: ballons;
         animation-duration: 6s;
-        z-index: 900;
+        z-index: 1000;
       }
 
       body .img2 {
@@ -34,7 +135,7 @@
         bottom: -490px;
         animation-name: ballons2;
         animation-duration: 6s;
-        z-index: 900;
+        z-index: 1000;
       }
       body .img4 {
         width: 25%;
@@ -43,7 +144,7 @@
         bottom: -490px;
         animation-name: ballons;
         animation-duration: 6s;
-        z-index: 900;
+        z-index: 1000;
       }
       body .img3 {
         width: 25%;
@@ -52,7 +153,7 @@
         animation-name: ballons2;
         top: -490px;
         animation-duration: 6s;
-        z-index: 900;
+        z-index: 1000;
       }
 
       @keyframes ballons {
@@ -698,7 +799,62 @@
       <img class="img3" src="les_images/anivairssaire/main/right.png" />
       <img class="img4" src="les_images/anivairssaire/main/right.png" />
     </div>
-    <div class="nav"></div>
+    <div class="header1">
+      <img
+        class="yassmine"
+        src=" les_images/header/logo-image-removebg-preview.png"
+        alt="Image introuvable!"
+      />
+      <div class="logo">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img src="les_images/header/facebook.png"
+        /></a>
+        <a
+          href="https://www.instagram.com/yasminefunparkmaroc/?next=%2F&hl=fr"
+          target="_blank"
+          ><img src="les_images/header/instagram.png" alt="Image introuvable!"
+        /></a>
+        <a href="https://www.tiktok.com/@yasminefunpark?_t=8elR" target="_blank"
+          ><img src="les_images/header/tik-tok.png" alt="Image introuvable!"
+        /></a>
+        <a href="https://www.youtube.com/@kenzaab" target="_blank"
+          ><img src="les_images/header/youtube.png" alt="Image introuvable!"
+        /></a>
+      </div>
+    </div>
+
+    <nav>
+      <ul class="liens" type="none">
+        <li><a href="index.html">Acceuil</a></li>
+        <li class="item">
+          <a href="#">Parc</a>
+          <ul type="none" class="options">
+            <li><a href="cafeteria.html">Cafétéria</a></li>
+            <li><a href="jeux.html">Jeux</a></li>
+            <li><a href="kids.html">Kids City</a></li>
+          </ul>
+        </li>
+        <li class="item">
+          <a href="#">Organisation</a>
+          <ul type="none" class="options">
+            <li><a href="anivairssaires.html">Anivairssaires</a></li>
+            <li><a href="ecoles.html">les ecoles</a></li>
+            <li><a href="ateliers.html">les ateliers</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="NosSuccursales.html">Nos Succursales</a>
+        </li>
+
+        <li class="item">
+          <a href="#">Reservation</a>
+          <ul type="none" class="options">
+            <li><a href="reservation_aniv.html">Anivairssaires</a></li>
+            <li><a href="reservation_ecol.html">Ecoles</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
 
     <header>
       <h1>JoyeuxAnniversaire</h1>

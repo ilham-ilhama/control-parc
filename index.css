@@ -21,49 +21,16 @@ body {
   margin: 0;
   padding: 0;
 }
+
 header {
-  position: relative;
-  height: 180px;
+  height: 130px;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  color:whitesmoke;
   justify-content: space-between;
-  overflow: hidden;
 }
-header::before{
-  content: "";
-  background-image: url(les_images/header/img2header.jpg);
-  background-size: cover;
-  filter: blur(2px);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-nav {
-  background-color: rgba(100, 50, 150, 0.61);
-  backdrop-filter: blur(5px);
-  position: sticky;
-  z-index: 3;
-  top: 5px;
-  border: solid white;  
-}
-.liens a {
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 800;
-  font-family: salsa;
-  color:rgba(255, 255, 255, 0.788) ;
-  text-shadow: 3px 3px 3px black;
-  padding-bottom: 2px;
-}
-.liens a:hover {
-  color: rgba(223, 110, 240, 0.749);
-  border-bottom: 2px solid rgb(255, 255, 255);
-}
-.yassmine {
+
+ header .yassmine {
   height: 100%;
   margin-left: 20px;
   animation-name: rien;
@@ -71,30 +38,15 @@ nav {
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
 }
-.logo img {
+header .logo img {
   height: 40px;
 }
-.logo {
+ header .logo {
   display: flex;
   margin-top: 28px;
   margin-right: 20px;
   gap: 15px;
   height: 40px;
-}
-.liens {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.options {
-  display: none;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-.item:hover .options {
-  display: block;
 }
 .logo a {
   border-radius: 50%;
@@ -111,6 +63,69 @@ nav {
 .logo a:nth-of-type(4):focus {
   box-shadow: 1px 1px 5px 7px rgb(255, 0, 0);
 }
+ nav {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 50px;
+    top: 5px;
+    z-index: 1000; 
+   background-color: rgba(255, 255, 255, 0.171);
+}
+nav .liens {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+ nav .liens  a {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 900;
+  font-family: salsa;
+  padding-bottom: 2px;
+}
+nav .liens li:nth-child(1) a{
+  color: red;
+}
+
+nav .liens li:nth-child(2) a{
+  color: rgb(157,28,177);
+}
+nav .liens li:nth-child(2) ul li a{
+  color: rgb(157,28,177);
+}
+nav .liens li:nth-child(3) a{
+  color: rgb(247,97,162);
+}
+nav .liens li:nth-child(4) a{
+  color:rgb(252, 200, 50);
+}
+nav .liens li:nth-child(5) a{
+  color: rgb(56,72,145);
+}
+
+nav .options {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.item:hover .options {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
   width: 100%;
