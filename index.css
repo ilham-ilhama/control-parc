@@ -279,11 +279,10 @@ div .border_3 {
 }
 
 main {
-  height: 1000px;
+  height: 900px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 section {
   width: 100%;
@@ -317,7 +316,6 @@ section h1 {
   font-size: 50px;
   margin: 0;
 }
-
 section p {
   display: flex;
   align-items: center;
@@ -359,22 +357,17 @@ section .paragraph {
 }
 @keyframes moncly {
   0% {
-
   }
   50% {
-
-   rotate: 400deg;
+    rotate: 400deg;
   }
   100% {
   }
 }
 @keyframes enfant {
- 
   50% {
-
     transform: translateY(110px);
   }
- 
 }
 .card-head img:nth-of-type(1) {
   animation-name: peroquet;
@@ -389,7 +382,7 @@ section .paragraph {
 .card-head img:nth-of-type(2) {
   animation-name: moncly;
   animation-duration: 11s;
-  animation-iteration-count: infinite ;
+  animation-iteration-count: infinite;
   width: 130px;
   position: relative;
   top: 120px;
@@ -399,23 +392,20 @@ section .paragraph {
 .card-head img:nth-of-type(3) {
   height: 200px;
   width: 60%;
-bottom: 200px;
-left: 130px;
+  bottom: 200px;
+  left: 130px;
   position: relative;
   filter: drop-shadow(14px 18px 2px rgba(35, 113, 141, 0.381));
-  animation-name:enfant;
+  animation-name: enfant;
   animation-duration: 7s;
 }
 .card-head img:nth-of-type(4) {
   height: 150px;
   width: 50%;
-bottom: 230px;
-left: 130px;
-position: relative;
-filter: drop-shadow(14px 1px 2px rgba(186, 221, 234, 0.521));
- 
-
-
+  bottom: 230px;
+  left: 130px;
+  position: relative;
+  filter: drop-shadow(14px 1px 2px rgba(186, 221, 234, 0.521));
 }
 .deco1 {
   width: 100px;
@@ -436,4 +426,65 @@ filter: drop-shadow(14px 1px 2px rgba(186, 221, 234, 0.521));
   background-color: #0af3f745;
   right: 50px;
   box-shadow: 1px 20px 10px 1px #0af3f781;
+}
+
+article {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 50px;
+}
+.container {
+  width: 27%;
+  height: 350px;
+  perspective: 500px;
+}
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+.front-side,
+.back-side {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden;
+}
+ article div:nth-of-type(1) .front-side{
+  background-image: url(les_images/backgroundheader6.jpg);
+  background-size: 100% 100%;
+  background-color: #00dbde;
+}
+article div:nth-of-type(2) .front-side {
+  background-image: url(les_images/main/article/atelier1.jpg);
+  background-size: 100% 100%;
+  background-color: #b790fe;
+}
+article div:nth-of-type(3) .front-side{
+  background-image: url(les_images/main/article/tobogon3.jpg);
+  background-size: 100% 100%;
+}
+.back-side {
+  background-color: rgb(131, 220, 231);
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+ 
+}
+.container:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
 }
