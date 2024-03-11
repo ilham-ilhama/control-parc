@@ -30,7 +30,7 @@ header {
   justify-content: space-between;
 }
 
- header .yassmine {
+header .yassmine {
   height: 100%;
   margin-left: 20px;
   animation-name: rien;
@@ -41,7 +41,7 @@ header {
 header .logo img {
   height: 40px;
 }
- header .logo {
+header .logo {
   display: flex;
   margin-top: 28px;
   margin-right: 20px;
@@ -63,44 +63,44 @@ header .logo img {
 .logo a:nth-of-type(4):focus {
   box-shadow: 1px 1px 5px 7px rgb(255, 0, 0);
 }
- nav {
-    position: -webkit-sticky;
-    position: sticky;
-    height: 50px;
-    top: 5px;
-    z-index: 1000; 
-   background-color: rgba(255, 255, 255, 0.171);
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  height: 50px;
+  top: 5px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.171);
 }
 nav .liens {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
- nav .liens  a {
+nav .liens a {
   text-decoration: none;
   font-size: 22px;
   font-weight: 900;
   font-family: salsa;
   padding-bottom: 2px;
 }
-nav .liens li:nth-child(1) a{
+nav .liens li:nth-child(1) a {
   color: red;
 }
 
-nav .liens li:nth-child(2) a{
-  color: rgb(157,28,177);
+nav .liens li:nth-child(2) a {
+  color: rgb(157, 28, 177);
 }
-nav .liens li:nth-child(2) ul li a{
-  color: rgb(157,28,177);
+nav .liens li:nth-child(2) ul li a {
+  color: rgb(157, 28, 177);
 }
-nav .liens li:nth-child(3) a{
-  color: rgb(247,97,162);
+nav .liens li:nth-child(3) a {
+  color: rgb(247, 97, 162);
 }
-nav .liens li:nth-child(4) a{
-  color:rgb(252, 200, 50);
+nav .liens li:nth-child(4) a {
+  color: rgb(252, 200, 50);
 }
-nav .liens li:nth-child(5) a{
-  color: rgb(56,72,145);
+nav .liens li:nth-child(5) a {
+  color: rgb(56, 72, 145);
 }
 
 nav .options {
@@ -278,26 +278,14 @@ div .border_3 {
   border-radius: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-main {  
+main {
   height: 1000px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-section{
+section {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -316,12 +304,11 @@ section{
   justify-content: space-around;
   align-items: center;
   border-radius: 10%;
- box-shadow: 1px 20px 10px 1px #0af3f759;
+  box-shadow: 1px 20px 10px 1px #0af3f759;
 }
-.paragraph-titre{
-  display:flex ;
+.paragraph-titre {
+  display: flex;
   flex-direction: column;
-  
 }
 section h1 {
   background: linear-gradient(to right, rgb(244, 47, 132) 0%, #0af3f7 100%);
@@ -329,12 +316,8 @@ section h1 {
   color: transparent;
   font-size: 50px;
   margin: 0;
-  
 }
-section h1:hover {
-  border-bottom: white 3px solid;
-  border-radius: 3px;
-}
+
 section p {
   display: flex;
   align-items: center;
@@ -354,33 +337,97 @@ section .paragraph {
   padding: 5px;
 }
 
-.card-head{
+.card-head {
   width: 50%;
-border-radius: 10%;
-box-shadow: inset 0 0 40px -0px rgba(108, 243, 253, 0.452);
+  border-radius: 10%;
+  box-shadow: inset 0 0 40px -0px rgba(108, 243, 253, 0.452);
   height: 300px;
   z-index: 100;
   background-color: rgba(253, 108, 212, 0.132);
-  box-shadow:1px 20px 10px 1px rgba(108, 243, 253, 0) ;
+  box-shadow: 1px 20px 10px 1px rgba(108, 243, 253, 0);
 }
-.card-head img{
-  height: 200px;
-  width: 30%;
+@keyframes peroquet {
+  0% {
+    transform: translateY(1px);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(1px);
+  }
+}
+@keyframes moncly {
+  0% {
+
+  }
+  50% {
+
+   rotate: 400deg;
+  }
+  100% {
+  }
+}
+@keyframes enfant {
+ 
+  50% {
+
+    transform: translateY(110px);
+  }
+ 
+}
+.card-head img:nth-of-type(1) {
+  animation-name: peroquet;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  width: 150px;
   position: relative;
-  left: 360px;
+  bottom: 90px;
+  rotate: 15deg;
+  filter: drop-shadow(10px 10px 1px rgba(5, 4, 28, 0.596));
 }
-.deco1{
+.card-head img:nth-of-type(2) {
+  animation-name: moncly;
+  animation-duration: 11s;
+  animation-iteration-count: infinite ;
+  width: 130px;
+  position: relative;
+  top: 120px;
+  left: 260px;
+  filter: drop-shadow(10px 10px 1px rgba(96, 92, 177, 0.557));
+}
+.card-head img:nth-of-type(3) {
+  height: 200px;
+  width: 60%;
+bottom: 200px;
+left: 130px;
+  position: relative;
+  filter: drop-shadow(14px 18px 2px rgba(35, 113, 141, 0.381));
+  animation-name:enfant;
+  animation-duration: 7s;
+}
+.card-head img:nth-of-type(4) {
+  height: 150px;
+  width: 50%;
+bottom: 230px;
+left: 130px;
+position: relative;
+filter: drop-shadow(14px 1px 2px rgba(186, 221, 234, 0.521));
+ 
+
+
+}
+.deco1 {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  left:50px;
+  left: 50px;
   position: relative;
   top: 5px;
   background-color: rgba(253, 108, 212, 0.196);
-  box-shadow:1px 20px 10px 1px rgba(253, 108, 212, 0.555) ;
-
+  box-shadow: 1px 20px 10px 1px rgba(253, 108, 212, 0.555);
 }
-.deco2{
+.deco2 {
   width: 100px;
   height: 100px;
   position: relative;
@@ -388,5 +435,5 @@ box-shadow: inset 0 0 40px -0px rgba(108, 243, 253, 0.452);
   border-radius: 50%;
   background-color: #0af3f745;
   right: 50px;
-  box-shadow:1px 20px 10px 1px #0af3f781 ;
+  box-shadow: 1px 20px 10px 1px #0af3f781;
 }
