@@ -18,7 +18,6 @@
           rgba(232, 194, 118, 1) 91%,
           rgba(232, 194, 118, 1) 97%
         );
-
         width: 100%;
         height: 100vh;
         padding: 0;
@@ -67,7 +66,6 @@
       .cart a:last-of-type {
         width: 30%;
       }
-
       body .cart button {
         width: 100%;
         height: 30px;
@@ -163,7 +161,7 @@
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
       }
-
+ 
       @keyframes truc1 {
         0%,
         100% {
@@ -261,6 +259,13 @@
           width: 35%;
         }
       }
+      .msj1,.msj2{
+        color: red;
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
     </style>
   </head>
   <body>
@@ -270,12 +275,38 @@
     <img class="deco2" src="les_images/reservation_aniv/truc3.png" />
     <img class="gateaux" src="les_images/reservation_aniv/gateaux.png" />
     <div class="cart">
-      <input type="email" placeholder="E-mail" />
-      <input type="password" placeholder="Mot de Passe" />
-      <a href="reserver_aniv.html"><button>Entrer</button></a>
+      <input id="email" type="email" placeholder="E-mail" />
+      <span class="msj1"></span>
+      <input id="password" type="password" placeholder="Mot de Passe" />
+      <span class="msj2"></span>
+      <a href="#" id="a"><button id="submit">Entrer</button></a>
       <a class="cree" href="compte_aniv.html">Créer Compte</a>
     </div>
     <img class="ballons2" src="les_images/reservation_aniv/ballon_bottom.png" />
     <img class="truc2" src="les_images/reservation_aniv/truc1.png" />
   </body>
+  <script>
+    document.getElementById('email').addEventListener('input', function () {
+      const email = this.value;
+      const msj1 = document.querySelector('.msj1');
+      if (!email.endsWith('@gmail.com')) {
+        msj1.textContent = 'svp ecrivez le email d\'une maniere correcte';
+      } else {
+        msj1.textContent = '';
+      }
+    });
+
+    document.getElementById('submit').addEventListener('click', function (event) {
+      
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const msj2 = document.querySelector('.msj2');
+      if (!email || !password) {
+        msj2.textContent = 'il faut remplir tout les champs';
+      } else {
+        msj2.textContent = '';
+        window.location.href = 'reserver_aniv.html';
+      }
+    });
+  </script>
 </html>

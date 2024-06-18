@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<body lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,273 +26,339 @@
       body h1 {
         text-shadow: 0px 0px 10px white, 0px 0px 20px white, 0px 0px 40px white,
           0px 0px 80px white;
-
-        color: rgb(255, 255, 255);
-      }
-      body input {
-        width: 200px;
-        height: 20px;
-        border-radius: 5px;
-        border: solid 2px rgba(255, 255, 255, 0);
-      }
-      body select {
-        width: 205px;
-        height: 30px;
-        border-radius: 5px;
-        color: rgb(6, 218, 225);
-      }
-      body input[type="datetime-local"] {
-        color: rgb(6, 218, 225);
-      }
-      body input[type="date"] {
-        color: rgb(6, 218, 225);
-      }
-      body input[type="file"] {
-        color: white;
-        
-      }
-
-      body textarea {
-        width: 200px;
-        height: 40px;
-        resize: none;
-        border-radius: 5px;
-      }
-      body input[type="radio"] {
-        width: auto;
-      }
-      body input[type="submit"] {
-        width: 205px;
-        height: 30px;
-        border-radius: 50px;
-        color: rgb(6, 218, 225);
-      }
-      div {
-        display: flex;
-        flex-direction: row;
-        gap: 80px;
-      }
-      .rad_invi {
-        display: flex;
-        gap: 210px;
-      }
-      .garcon {
-        display: flex;
-        flex-direction: row;
-        gap: 0;
-      }
-      .fill {
-        display: flex;
-        flex-direction: row;
-        gap: 0;
-      }
-      .titulaire {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        border: solid 2px white;
-        border-radius: 10px;
-        background: transparent;
-        backdrop-filter: blur(100px);
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-      }
-      body .parent {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        border: solid 2px;
-        align-items: center;
-        border: solid 2px white;
-        border-radius: 10px;
-        background: transparent;
-        backdrop-filter: blur(100px);
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-      .choix_pai {
-        display: flex;
-        gap: 210px;
-      }
-      @media (max-width:800px){
-        body{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          gap:20px;
-        }
-        body input[type="submit"]{
-          margin-bottom: 10px;
-        }
-      }
-      @media (max-width:450px){
-        body{
-          color:rgb(255, 255, 255);
-        }
-        div{
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-        }
-        .titulaire{
-          display: flex;;  
-         padding-left: 20px;
-         width: 90%; 
-        }
-        .rad_invi{
-          display: flex;
-          gap: 0;
-        }
-        form{
-          display: flex;  
-        }
-        .choix_pai{
-          display: flex;
-          gap: 0;
-        }
-        input{
-         width: 200px;
-        }
-        label{
-          width: 190px;
-        }
-        select{
-          margin-left:200px;
-        }
-        textarea{
-          width: 180px;
-        }
-        body input[type="file"]{
-          margin-left: 20px;
-        }
-        .parent{
-          width: 90%; 
-        }
-       
-      }
-
-
-
-    </style>
-  </head>
-  <body>
-    <div class="titulaire">
-      <h1>parti titulaire d'annivairsaire</h1>
-      <div>
-        <form>
-          <label for="nom">Nom :</label><br />
-          <input type="text" id="nom" name="nom" />
-        </form>
-        <form>
-          <label for="prenom">Prenom :</label><br />
-          <input type="text" id="prenom" name="prenom" />
-        </form>
-      </div>
-
-      <div>
-        <form>
-          <label for="age">Age :</label><br />
-          <input type="date" id="age" name="age" />
-        </form>
-        <form>
-          <label for="date">la date d'annivairsaire :</label><br />
-          <input type="datetime-local" id="date" name="date" />
-        </form>
-      </div>
-
-      <div>
-        <select>
-          <option>selectionnee le Formules :</option>
-          <option>MERCURE</option>
-          <option>VENUS</option>
-          <option>MARS</option>
-        </select>
-        <select>
-          <option>selectionnee la succursale</option>
-          <option>Bouskoura</option>
-          <option>Tachefine</option>
-          <option>Maarif</option>
-          <option>Californie</option>
-          <option>sidi-maarouf</option>
-        </select>
-      </div>
-
-      <div>
-        <form>
-          <label for="tem">Theme :</label><br />
-          <textarea id="tem"></textarea><br />
-        </form>
-        <form>
-          <label for="inviter">Nombre d'inviter :</label><br />
-          <input type="number" id="inviter" name="inviter" />
-        </form>
-      </div>
-
-      <div class="rad_invi">
-        <form class="radio">
-          <div class="garcon">
-            <input type="radio" id="garcon" name="choi" />
-            <label for="garcon">Garcon </label>
-          </div>
-          <div class="fill">
-            <input type="radio" id="fille" name="choi" />
-            <label for="fille">Fille </label>
-          </div>
-        </form>
-        <form>
-          <label for="inviter_nom">Nom et Prenom d'inviter :</label><br />
-          <input type="file" id="inviter_nom" name="inviter_nom" />
-        </form>
-      </div>
-
-      <form>
-        <input type="submit" id="envoyer" name="envoyer" />
-      </form>
-    </div>
+css
+Copier le code
+    color: rgb(255, 255, 255);
+  }
+  body input {
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    border: solid 2px rgba(255, 255, 255, 0);
+  }
+  body select {
+    width: 205px;
+    height: 30px;
+    border-radius: 5px;
+    color: rgb(6, 218, 225);
+  }
+  body input[type="datetime-local"] {
+    color: rgb(6, 218, 225);
+  }
+  body input[type="date"] {
+    color: rgb(6, 218, 225);
+  }
+  body input[type="file"] {
+    color: white;
     
-    <div class="parent">
-      <h1>parti parent</h1>
-      <div>
-        <form>
-          <label for="nom">Nom :</label><br />
-          <input type="text" id="nom" name="nom" />
-        </form>
-        <form>
-          <label for="prenom">Prenom :</label><br />
-          <input type="text" id="prenom" name="prenom" />
-        </form>
-      </div>
+  }
 
-      <div>
-        <form>
-          <label for="mail">Email:</label><br />
-          <input type="email" id="mail" name="mail" />
-        </form>
-        <form>
-          <label for="num">Numero telephone :</label><br />
-          <input type="text" id="num" name="num" />
-        </form>
-      </div>
-      <div class="choix_pai">
-        <form>
-          <input type="radio" id="homme" name="choi" />
-          <label for="homme">Homme</label><br />
-          <input type="radio" id="femme" name="choi" />
-          <label for="femme">Femme</label>
-        </form>
-        <select>
-          <option>Paiment :</option>
-          <option>enligne</option>
-          <option>sur place</option>
-        </select>
-      </div>
+  body textarea {
+    width: 200px;
+    height: 40px;
+    resize: none;
+    border-radius: 5px;
+  }
+  body input[type="radio"] {
+    width: auto;
+  }
+  body input[type="submit"] {
+    width: 205px;
+    height: 30px;
+    border-radius: 50px;
+    color: rgb(6, 218, 225);
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+  }
+  .rad_invi {
+    display: flex;
+    gap: 210px;
+  }
+  .garcon {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+  .fill {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+  .titulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border: solid 2px white;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(100px);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  body .parent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: solid 2px;
+    align-items: center;
+    border: solid 2px white;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(100px);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .choix_pai {
+    display: flex;
+    gap: 210px;
+  }
+  @media (max-width:800px){
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:20px;
+    }
+    body input[type="submit"]{
+      margin-bottom: 10px;
+    }
+  }
+  @media (max-width:450px){
+    body{
+      color:rgb(255, 255, 255);
+    }
+    div{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .titulaire{
+      display: flex;;  
+     padding-left: 20px;
+     width: 90%; 
+    }
+    .rad_invi{
+      display: flex;
+      gap: 0;
+    }
+    form{
+      display: flex;  
+    }
+    .choix_pai{
+      display: flex;
+      gap: 0;
+    }
+    input{
+     width: 200px;
+    }
+    label{
+      width: 190px;
+    }
+    select{
+      margin-left:200px;
+    }
+    textarea{
+      width: 180px;
+    }
+    body input[type="file"]{
+      margin-left: 20px;
+    }
+    .parent{
+      width: 90%; 
+    }
+   
+  }
 
-      <form>
-        <input type="submit" id="envoyer" name="envoyer" />
-      </form>
-    </div>
-  </body>
+</style>
+  </head>
+<body>
+<div class="titulaire">
+  <h1>parti titulaire d'anniversaire</h1>
+  <div>
+    <form>
+      <label for="nom">Nom :</label><br />
+      <input type="text" id="nom" name="nom" />
+      <span id="nomError" style="color: red;"></span><br />
+    </form>
+    <form>
+      <label for="prenom">Prénom :</label><br />
+      <input type="text" id="prenom" name="prenom" />
+      <span id="prenomError" style="color: red;"></span><br />
+    </form>
+  </div>
+  <div>
+    <form>
+      <label for="age">Âge :</label><br />
+      <input type="date" id="age" name="age" />
+    </form>
+    <form>
+      <label for="date">La date d'anniversaire :</label><br />
+      <input type="datetime-local" id="date" name="date" />
+    </form>
+  </div>
+  <div>
+    <select>
+      <option>Sélectionnez le Formule :</option>
+      <option>MERCURE</option>
+      <option>VENUS</option>
+      <option>MARS</option>
+    </select>
+    <select>
+      <option>Sélectionnez la succursale</option>
+      <option>Bouskoura</option>
+      <option>Tachefine</option>
+      <option>Maarif</option>
+      <option>Californie</option>
+      <option>sidi-maarouf</option>
+    </select>
+  </div>
+  <div>
+    <form>
+      <label for="tem">Thème :</label><br />
+      <textarea id="tem"></textarea><br />
+    </form>
+    <form>
+      <label for="inviter">Nombre d'invités :</label><br />
+      <input type="number" id="inviter" name="inviter" />
+    </form>
+  </div>
+  <div class="rad_invi">
+    <form class="radio">
+      <div class="garcon">
+        <input type="radio" id="garcon" name="choix" />
+        <label for="garcon">Garçon</label>
+      </div>
+      <div class="fill">
+        <input type="radio" id="fille" name="choix" />
+        <label for="fille">Fille</label>
+      </div>
+    </form>
+    <form>
+      <label for="inviter_nom">Nom et Prénom des invités :</label><br />
+      <input type="file" id="inviter_nom" name="inviter_nom" />
+    </form>
+  </div>
+  <form id="submitForm">
+    <input type="submit" id="envoyer" name="envoyer" />
+  </form>
+  <span id="submitMessage" style="color: green;"></span>
+</div>
+<div class="parent">
+  <h1>parti parent</h1>
+  <div>
+    <form>
+      <label for="parent_nom">Nom :</label><br />
+      <input type="text" id="parent_nom" name="parent_nom" />
+      <span id="parentNomError" style="color: red;"></span><br />
+    </form>
+    <form>
+      <label for="parent_prenom">Prénom :</label><br />
+      <input type="text" id="parent_prenom" name="parent_prenom" />
+      <span id="parentPrenomError" style="color: red;"></span><br />
+    </form>
+  </div>
+  <div>
+    <form>
+      <label for="mail">Email :</label><br />
+      <input type="email" id="mail" name="mail" />
+    </form>
+    <form>
+      <label for="num">Numéro de téléphone :</label><br />
+      <input type="text" id="num" name="num" />
+    </form>
+  </div>
+  <div class="choix_pai">
+    <form>
+      <input type="radio" id="homme" name="sexe" />
+      <label for="homme">Homme</label><br />
+      <input type="radio" id="femme" name="sexe" />
+      <label for="femme">Femme</label>
+    </form>
+    <select id="paiement">
+      <option>Paiement :</option>
+      <option>en ligne</option>
+      <option>sur place</option>
+    </select>
+  </div>
+  <form id="parentSubmitForm">
+    <input type="submit" id="parent_envoyer" name="parent_envoyer" />
+  </form>
+  <span id="parentSubmitMessage" style="color: green;"></span>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const nomInput = document.getElementById("nom");
+  const prenomInput = document.getElementById("prenom");
+  const parentNomInput = document.getElementById("parent_nom");
+  const parentPrenomInput = document.getElementById("parent_prenom");
+  const submitForm = document.getElementById("submitForm");
+  const parentSubmitForm = document.getElementById("parentSubmitForm");
+  const submitMessage = document.getElementById("submitMessage");
+  const parentSubmitMessage = document.getElementById("parentSubmitMessage");
+
+
+  submitForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (nomInput.value === "" || prenomInput.value === "") {
+      submitMessage.textContent = "Tous les champs sont obligatoires.";
+      submitMessage.style.color = "red";
+    } else {
+      submitMessage.textContent = "Vos informations ont été envoyées avec succès.";
+      submitMessage.style.color = "green";
+    }
+  });
+
+  parentSubmitForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (parentNomInput.value === "" || parentPrenomInput.value === "") {
+      parentSubmitMessage.textContent = "Tous les champs sont obligatoires.";
+      parentSubmitMessage.style.color = "red";
+    } else {
+      parentSubmitMessage.textContent = "Vos informations ont été envoyées avec succès.";
+      parentSubmitMessage.style.color = "green";
+    }
+  });
+  
+
+  nomInput.addEventListener("input", () => {
+    if (!/^[a-zA-Z]+$/.test(nomInput.value)) {
+      document.getElementById("nomError").textContent = "Le nom est incorrect.";
+    } else {
+      document.getElementById("nomError").textContent = "";
+    }
+  });
+
+  prenomInput.addEventListener("input", () => {
+    if (!/^[a-zA-Z]+$/.test(prenomInput.value)) {
+      document.getElementById("prenomError").textContent = "Le prénom est incorrect.";
+    } else {
+      document.getElementById("prenomError").textContent = "";
+    }
+  });
+
+  parentNomInput.addEventListener("input", () => {
+    if (!/^[a-zA-Z]+$/.test(parentNomInput.value)) {
+      document.getElementById("parentNomError").textContent = "Le nom est incorrect.";
+    } else {
+      document.getElementById("parentNomError").textContent = "";
+    }
+  });
+
+  parentPrenomInput.addEventListener("input", () => {
+    if (!/^[a-zA-Z]+$/.test(parentPrenomInput.value)) {
+      document.getElementById("parentPrenomError").textContent = "Le prénom est incorrect.";
+    } else {
+      document.getElementById("parentPrenomError").textContent = "";
+    }
+  });
+});
+</script>
+</body>
 </html>
